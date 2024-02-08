@@ -1,6 +1,6 @@
 package students.ruslan_k;
 
-public class testArifmetic {
+public class TestArithmetic {
     public static void main(String[] args) {
         int a = 10;
         int b = 4;
