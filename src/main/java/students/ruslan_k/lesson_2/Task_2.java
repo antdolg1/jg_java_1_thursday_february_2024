@@ -2,7 +2,7 @@ package students.ruslan_k.lesson_2;
 
 import java.util.Scanner;
 
-public class DoubleArithmetic {
+public class Task_2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Please input 1st DBL: ");
