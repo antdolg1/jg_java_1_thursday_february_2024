@@ -88,4 +88,4 @@
 
 ---
 
-![build](https://github.com/antdolg1/jg_java_1_thursday_thursday_2024/actions/workflows/build.yaml/badge.svg)
+![build](https://github.com/antdolg1/jg_java_1_thursday_february_2024/actions/workflows/build.yaml/badge.svg)
