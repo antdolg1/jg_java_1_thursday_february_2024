@@ -2,8 +2,19 @@
 # Compiled class file
 *.class
 
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Other common directories to ignore
+target/
+out/
+
 # Log file
 *.log
+*.tmp
 
 # BlueJ files
 *.ctxt
