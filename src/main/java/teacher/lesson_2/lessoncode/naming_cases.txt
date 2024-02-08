@@ -1,0 +1,6 @@
+camelCase - for variable and method names
+PascalCase - for class names
+kebab-case
+snake_case
+UPPERCASE
+lowercase
