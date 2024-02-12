@@ -1,4 +1,4 @@
-package students.nikita_bortnikovs.lesson_2;
+package students.nikita_bortnikovs.lesson_2.level_3;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package students.nikita_bortnikovs.lesson_2;
+package students.nikita_bortnikovs.lesson_2.level_5;
 
 public class level_5_1 {
     public static void main(String[] args){

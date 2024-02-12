@@ -1,20 +1,19 @@
-package students.nikita_bortnikovs.lesson_2;
-
+package students.nikita_bortnikovs.lesson_2.level_1;
 import java.util.Scanner;
 
-public class level_1_2 {
+public class level_1_1 {
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter first number on the next line...");
-        double A = scanner.nextDouble();
+        int A = scanner.nextInt();
         System.out.println("Please enter second number on the next line...");
-        double B = scanner.nextDouble();
+        int B = scanner.nextInt();
 
-        double sum = A + B;
-        double sub = A - B;
-        double mult = A * B;
-        double div = A / B;
+        int sum = A + B;
+        int sub = A - B;
+        int mult = A * B;
+        int div = A / B;
 
         System.out.println("The sum of "+ A +" and "+ B +" is equal to "+ sum);
         System.out.println("The sub of "+ A +" and "+ B +" is equal to "+ sub);
