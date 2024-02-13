@@ -6,16 +6,15 @@ public class Task_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Please input 1st INT: ");
-        int a = scan.nextInt();
+        int firstInt = scan.nextInt();
         System.out.print("Please input 2nd INT: ");
-        int b = scan.nextInt();
-        int c=a+b;
-        System.out.println("Result of " + a + "+" + b + " is " + c);
-        c=a-b;
-        System.out.println("Result of " + a + "-" + b + " is " + c);
+        int secondInt = scan.nextInt();
+        int resInt = firstInt + secondInt;
+        System.out.println("Result of " + firstInt + "+" + secondInt + " is " + resInt);
+        resInt = firstInt - secondInt;
+        System.out.println("Result of " + firstInt + "-" + secondInt + " is " + resInt);
 
-        System.out.println("Result of " + a + "*" + b + " is " + a*b);
-        System.out.println("Result of " + a + "/" + b + " is " + a/b);
-
+        System.out.println("Result of " + firstInt + "*" + secondInt + " is " + firstInt * secondInt);
+        System.out.println("Result of " + firstInt + "/" + secondInt + " is " + firstInt / secondInt);
     }
 }
