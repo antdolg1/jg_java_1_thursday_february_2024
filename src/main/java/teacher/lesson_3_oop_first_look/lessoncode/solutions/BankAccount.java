@@ -14,5 +14,8 @@ public class BankAccount {
         return this.owner;
     }
 
+    int getAmount() {
+        return this.amount;
+    }
 
 }

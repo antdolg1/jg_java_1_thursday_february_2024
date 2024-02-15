@@ -16,6 +16,9 @@ public class BankAccountApp {
         System.out.println(owner4);
 
 
+        System.out.println(bankAccount2.getAmount());
+        System.out.println(bankAccount3.getAmount());
+
     }
 
 
