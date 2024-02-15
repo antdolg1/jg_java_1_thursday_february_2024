@@ -6,11 +6,22 @@ public class BankAccount {
 
     BankAccount(String owner, int amount) {
         this.owner = owner;
-        this. amount = amount;
+        this.amount = amount;
     }
 
     String getOwner() {
         return this.owner;
     }
 
+    int getAmount() {
+        return this.amount;
+    }
+
+    void addAmount(int amountToadd) {
+        this.amount = this.amount + amountToadd;
+    }
+
+    void redAmount(int amountTored) {
+        this.amount = this.amount - amountTored;
+    }
 }
