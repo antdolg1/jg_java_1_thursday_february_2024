@@ -10,5 +10,9 @@ public class BankAccount {
         this.amount = amount;
     }
 
+    String getOwner() {
+        return this.owner;
+    }
+
 
 }
