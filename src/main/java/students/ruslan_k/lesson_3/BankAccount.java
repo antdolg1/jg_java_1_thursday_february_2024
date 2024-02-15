@@ -15,6 +15,9 @@ public class BankAccount {
     int getAmount(){
         return this.amount;
     }
+    void changeAmount(int sum){
+        this.amount=this.amount+sum;
+    }
 
 }
 
