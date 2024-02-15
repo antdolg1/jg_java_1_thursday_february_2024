@@ -18,4 +18,8 @@ public class BankAccount {
         return this.amount;
     }
 
+    void addAmount(int amountToAdd) {
+        this.amount = this.amount + amountToAdd;
+    }
+
 }
