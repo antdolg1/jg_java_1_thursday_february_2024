@@ -1,7 +1,12 @@
 package students.ruslan_k.lesson_3;
 
 public class BankAccount {
-    private String owner;
-    long amount;
+    String owner;
+    int amount;
+
+    BankAccount(String newOwner, int newAmount) {
+        this.owner=newOwner;
+        this.amount=newAmount;
+    }
 
 }
