@@ -1,8 +1,7 @@
-package teacher.lesson_3_oop_first_look.lessoncode.solutions;
+package students.karina_cmile.lesson_3.lessoncode;
 
 public class BankAccount {
     String owner;
-
     int amount;
 
     BankAccount(String owner, int amount) {
@@ -18,12 +17,11 @@ public class BankAccount {
         return this.amount;
     }
 
-    void addAmount(int amountToAdd) {
-        this.amount = this.amount + amountToAdd;
+    void addAmount(int amountToadd) {
+        this.amount = this.amount + amountToadd;
     }
 
-    void removeAmount(int amountToRemove) {
-        this.amount = this.amount - amountToRemove;
+    void redAmount(int amountTored) {
+        this.amount = this.amount - amountTored;
     }
-
 }
