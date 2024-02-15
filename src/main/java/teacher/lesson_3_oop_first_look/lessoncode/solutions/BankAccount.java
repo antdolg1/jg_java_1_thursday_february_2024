@@ -6,4 +6,9 @@ public class BankAccount {
     int amount;
 
 
+    BankAccount(String owner) {
+        this.owner = owner;
+    }
+
+
 }

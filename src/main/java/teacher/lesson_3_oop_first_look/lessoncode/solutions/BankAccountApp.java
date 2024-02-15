@@ -4,9 +4,11 @@ public class BankAccountApp {
 
     public static void main(String[] args) {
 
-        BankAccount bankAccount1 = new BankAccount();
-        BankAccount bankAccount2 = new BankAccount();
-        BankAccount bankAccount3 = new BankAccount();
+        BankAccount bankAccount1 = new BankAccount("Vasja Pupkin");
+        BankAccount bankAccount2 = new BankAccount("Petja V");
+        BankAccount bankAccount3 = new BankAccount("Inga G");
+
+        BankAccount bankAccount4 = new BankAccount("Tatjana");
 
 
     }
