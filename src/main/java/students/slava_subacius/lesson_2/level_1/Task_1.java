@@ -1,4 +1,4 @@
-package students.slava_subacius.lesson_2;
+package students.slava_subacius.lesson_2.level_1;
 
 import java.util.Scanner;
 
