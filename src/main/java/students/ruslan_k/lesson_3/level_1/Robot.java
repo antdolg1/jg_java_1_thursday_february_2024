@@ -10,4 +10,9 @@ public class Robot {
     public String getRobotName() {
         return robotName;
     }
+    void setRobotName(String robotName){
+        this.robotName=robotName;
+    }
 }
+
+
