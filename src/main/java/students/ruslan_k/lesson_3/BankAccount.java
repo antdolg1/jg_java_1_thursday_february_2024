@@ -9,4 +9,13 @@ public class BankAccount {
         this.amount=newAmount;
     }
 
+    String getOwner(){
+        return this.owner;
+    }
+    int getAmount(){
+        return this.amount;
+    }
+
 }
+
+
