@@ -18,7 +18,12 @@ public class BankAccount {
     void changeAmount(int sum){
         this.amount=this.amount+sum;
     }
-
+    void setOwner(String name){
+        this.owner=name;
+    }
+    void setAmount(int sum){
+        this.amount=sum;
+    }
 }
 
 

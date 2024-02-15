@@ -9,6 +9,8 @@ public class BankAccountApp {
         System.out.println(acc1.getAmount() +"  " + acc1.getOwner());
         acc1.changeAmount(-100);
         System.out.println(acc1.getAmount() +"  " + acc1.getOwner());
+        acc1.setAmount(154213);
+        System.out.println(acc1.getAmount() +"  " + acc1.getOwner());
         // System.out.println(acc2.amount +"  " + acc2.owner);
         // System.out.println(acc3.amount +"  " + acc3.owner);
 
