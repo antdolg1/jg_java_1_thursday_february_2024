@@ -14,5 +14,16 @@ public class BankAccount {
         return this.owner;
     }
 
+    int getAmount() {
+        return this.amount;
+    }
+
+    void addAmount(int amountToAdd) {
+        this.amount = this.amount + amountToAdd;
+    }
+
+    void removeAmount(int amountToRemove) {
+        this.amount = this.amount - amountToRemove;
+    }
 
 }

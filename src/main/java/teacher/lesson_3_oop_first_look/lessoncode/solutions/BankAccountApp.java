@@ -15,6 +15,16 @@ public class BankAccountApp {
         String owner4 = bankAccount4.getOwner();
         System.out.println(owner4);
 
+        System.out.println(bankAccount2.getAmount());
+        System.out.println(bankAccount3.getAmount());
+
+        System.out.println(bankAccount4.getOwner());
+        System.out.println(bankAccount4.getAmount());
+        bankAccount4.addAmount(1000);
+        bankAccount4.addAmount(1000);
+        bankAccount4.removeAmount(500);
+        bankAccount4.removeAmount(999);
+        System.out.println(bankAccount4.getAmount());
 
     }
 
