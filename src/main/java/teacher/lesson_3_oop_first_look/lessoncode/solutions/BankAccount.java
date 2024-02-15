@@ -22,4 +22,8 @@ public class BankAccount {
         this.amount = this.amount + amountToAdd;
     }
 
+    void removeAmount(int amountToRemove) {
+        this.amount = this.amount - amountToRemove;
+    }
+
 }
