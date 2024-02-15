@@ -1,4 +1,4 @@
-package students.karina_cmile.lesson_3;
+package students.karina_cmile.lesson_3.lessoncode;
 
 public class BankAccount {
     String owner;

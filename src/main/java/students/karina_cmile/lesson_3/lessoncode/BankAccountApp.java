@@ -1,4 +1,4 @@
-package students.karina_cmile.lesson_3;
+package students.karina_cmile.lesson_3.lessoncode;
 
 public class BankAccountApp {
     public static void main(String[] args) {

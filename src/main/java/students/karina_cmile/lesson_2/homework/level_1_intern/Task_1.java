@@ -1,6 +1,5 @@
-package students.karina_cmile.lesson_2.level_1_intern;
+package students.karina_cmile.lesson_2.homework.level_1_intern;
 
-import java.net.SocketOption;
 import java.util.Scanner;
 
 public class Task_1 {
