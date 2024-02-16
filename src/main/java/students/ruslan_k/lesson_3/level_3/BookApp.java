@@ -9,11 +9,11 @@ public class BookApp {
 
         System.out.println("First book is "+firstBook.getBookName()+", Author " + firstBook.getAuthor());
         System.out.println("Year of publishing: "+ firstBook.getYearOfPublish());
-        System.out.println("Contain chapters "+ firstBook.chapter1.getChapName()+". "+firstBook.chapter1.getChapText()+ " and "+firstBook.chapter2.getChapName()+". "+firstBook.chapter2.getChapText());
+        System.out.println("Contain chapters: "+ firstBook.chapter1.getChapName()+". "+firstBook.chapter1.getChapText()+ " and "+firstBook.chapter2.getChapName()+". "+firstBook.chapter2.getChapText());
 
         System.out.println("Second book is "+secondBook.getBookName()+", Author " + secondBook.getAuthor());
         System.out.println("Year of publishing: "+ secondBook.getYearOfPublish());
-        System.out.println("Contain chapters "+ secondBook.chapter1.getChapName()+". "+secondBook.chapter1.getChapText()+ " and "+secondBook.chapter2.getChapName()+". "+secondBook.chapter2.getChapText());
+        System.out.println("Contain chapters: "+ secondBook.chapter1.getChapName()+". "+secondBook.chapter1.getChapText()+ " and "+secondBook.chapter2.getChapName()+". "+secondBook.chapter2.getChapText());
 
 
         firstBook.setBookName("ABC");
