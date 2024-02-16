@@ -10,8 +10,16 @@ public class Apple {
         this.color = color;
         this.weight = weight;
     }
-    String getSort() {
 
-    } ;
-    String
+    public String getSort() {
+        return sort;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
 }
