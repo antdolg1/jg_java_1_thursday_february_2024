@@ -4,7 +4,7 @@ package students.ruslan_k.lesson_3.level_4;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class DocVisitApp {
+class DocVisitApp {
     public static void main(String[] args) {
         String[] doc1Name = {"Виктор", "Фредди", "Миньоны", "Яга", "Айболит"};
         String[] doc2Name = {"Франкенштейн", "Крюгер", "(команда)", "(баба)", ""};

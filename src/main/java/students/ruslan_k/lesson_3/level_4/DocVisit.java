@@ -1,6 +1,6 @@
 package students.ruslan_k.lesson_3.level_4;
 
-public class DocVisit {
+class DocVisit {
     String docFirstName;
     String docSecName;
     String profile;
@@ -21,64 +21,64 @@ public class DocVisit {
         client=new Client();
     }
 
-    public int getVisitNr() {
+     int getVisitNr() {
         return visitNr;
     }
 
-    public String getDocFirstName() {
+     String getDocFirstName() {
         return docFirstName;
     }
 
-    public String getDocSecName() {
+     String getDocSecName() {
         return docSecName;
     }
 
-    public String getVisitDate() {
+     String getVisitDate() {
         return visitDate;
     }
 
-    public String getProfile() {
+     String getProfile() {
         return profile;
     }
 
-    public boolean getAmVisit(){
+     boolean getAmVisit(){
         return isAmVisit;
     }
 
-    public boolean getPmVisit(){
+     boolean getPmVisit(){
         return isPmVisit;
     }
 
-    public void setDocFirstName(String docFirstName) {
+     void setDocFirstName(String docFirstName) {
         this.docFirstName = docFirstName;
     }
 
-    public void setDocSecName(String docSecName) {
+     void setDocSecName(String docSecName) {
         this.docSecName = docSecName;
     }
 
-    public void setProfile(String profile) {
+     void setProfile(String profile) {
         this.profile = profile;
     }
 
-    public void setVisitDate(String visitDate) {
+     void setVisitDate(String visitDate) {
         this.visitDate = visitDate;
     }
 
-    public void setVisitNr(int visitNr) {
+     void setVisitNr(int visitNr) {
         this.visitNr = visitNr;
     }
 
-    public void setAmVisit(boolean amVisit) {
+     void setAmVisit(boolean amVisit) {
         isAmVisit = amVisit;
     }
 
-    public void setPmVisit(boolean pmVisit) {
+     void setPmVisit(boolean pmVisit) {
         isPmVisit = pmVisit;
     }
 
     //----------------------------------------------------------------------------------------------------------------------
-    public class Client{
+     class Client{
         String clientFirstName;
         String clientSecName;
         String diagnose;
@@ -90,35 +90,35 @@ public class DocVisit {
             this.visitPrice=0;
         }
 
-        public void setClientFirstName(String clientFirstName) {
+         void setClientFirstName(String clientFirstName) {
             this.clientFirstName = clientFirstName;
         }
 
-        public void setClientSecName(String clientSecName) {
+         void setClientSecName(String clientSecName) {
             this.clientSecName = clientSecName;
         }
 
-        public void setDiagnose(String diagnose) {
+         void setDiagnose(String diagnose) {
             this.diagnose = diagnose;
         }
 
-        public void setVisitPrice(double visitPrice) {
+         void setVisitPrice(double visitPrice) {
             this.visitPrice = visitPrice;
         }
 
-        public String getClientFirstName() {
+         String getClientFirstName() {
             return clientFirstName;
         }
 
-        public String getClientSecName() {
+         String getClientSecName() {
             return clientSecName;
         }
 
-        public String getDiagnose() {
+         String getDiagnose() {
             return diagnose;
         }
 
-        public double getVisitPrice() {
+         double getVisitPrice() {
             return visitPrice;
         }
     }
