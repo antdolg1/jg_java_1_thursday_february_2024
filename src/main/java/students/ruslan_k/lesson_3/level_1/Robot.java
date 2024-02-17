@@ -7,7 +7,7 @@ class Robot {
         this.robotName=robotName;
     }
 
-    public String getRobotName() {
+    String getRobotName() {
         return robotName;
     }
     void setRobotName(String robotName){
