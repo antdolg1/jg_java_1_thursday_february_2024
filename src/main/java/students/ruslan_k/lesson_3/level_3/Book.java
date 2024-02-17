@@ -1,5 +1,5 @@
 package students.ruslan_k.lesson_3.level_3;
-public class Book{
+class Book{
     String bookName;
     String author;
     int yearOfPublish;
@@ -15,31 +15,31 @@ public class Book{
         chapter2=new ChapterOfBook(chap2Name, chap2Text);
     }
 
-    public void setBookName(String bookName) {
+    void setBookName(String bookName) {
         this.bookName = bookName;
     }
 
-    public String getBookName() {
+    String getBookName() {
         return bookName;
     }
 
-    public void setAuthor(String author) {
+    void setAuthor(String author) {
         this.author = author;
     }
 
-    public String getAuthor() {
+    String getAuthor() {
         return author;
     }
 
-    public void setYearOfPublish(int yearOfPublish) {
+    void setYearOfPublish(int yearOfPublish) {
         this.yearOfPublish = yearOfPublish;
     }
 
-    public int getYearOfPublish() {
+    int getYearOfPublish() {
         return yearOfPublish;
     }
 
-    public class ChapterOfBook {
+    class ChapterOfBook {
         String chapName;
         String chapText;
 
@@ -48,19 +48,19 @@ public class Book{
             this.chapText=chapText;
         }
 
-        public String getChapName() {
+        String getChapName() {
             return chapName;
         }
 
-        public String getChapText() {
+        String getChapText() {
             return chapText;
         }
 
-        public void setChapText(String chapText) {
+        void setChapText(String chapText) {
             this.chapText = chapText;
         }
 
-        public void setChapName(String chapName) {
+        void setChapName(String chapName) {
             this.chapName = chapName;
         }
     }
