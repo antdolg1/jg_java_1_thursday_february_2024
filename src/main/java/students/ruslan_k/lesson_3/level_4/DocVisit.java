@@ -8,7 +8,7 @@ public class DocVisit {
     boolean isAmVisit;
     boolean isPmVisit;
     Client client;
-
+    int visitNr;
 
     DocVisit(){
         this.docFirstName="";
@@ -17,7 +17,12 @@ public class DocVisit {
         this.visitDate="";
         this.isAmVisit=false;
         this.isPmVisit=false;
+        this.visitNr=0;
         client=new Client();
+    }
+
+    public int getVisitNr() {
+        return visitNr;
     }
 
     public String getDocFirstName() {
@@ -51,7 +56,12 @@ public class DocVisit {
     public void setVisitDate(String visitDate) {
         this.visitDate = visitDate;
     }
-//----------------------------------------------------------------------------------------------------------------------
+
+    public void setVisitNr(int visitNr) {
+        this.visitNr = visitNr;
+    }
+
+    //----------------------------------------------------------------------------------------------------------------------
     public class Client{
         String clientFirstName;
         String clientSecName;
