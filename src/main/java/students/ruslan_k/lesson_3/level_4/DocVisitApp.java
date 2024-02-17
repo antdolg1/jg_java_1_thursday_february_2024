@@ -54,7 +54,7 @@ public class DocVisitApp {
         System.out.print("Diagnose: ");
         visit.client.setDiagnose(scan.nextLine());
         visit.client.setVisitPrice(125.45);
-        //if(visit.)
+
         System.out.println(visit.client.getClientFirstName());
         System.out.println("------------------------------");
         System.out.printf("Больной %s %s записан(а) %s к врачу %s %s на часы с диагнозом %s \n",visit.client.getClientFirstName(), visit.client.getClientSecName(),visit.getVisitDate(),visit.getDocFirstName(),visit.getDocSecName(),visit.client.getDiagnose());
