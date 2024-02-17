@@ -1,4 +1,4 @@
-package students.aleksej_agurjanov;
+package students.aleksej_agurjanov.lesson_3;
 
 public class MusicBox {
 

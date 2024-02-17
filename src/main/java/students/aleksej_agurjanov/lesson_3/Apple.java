@@ -1,6 +1,6 @@
-package students.aleksej_agurjanov;
+package students.aleksej_agurjanov.lesson_3;
 
-public class Apple {
+class Apple {
 
     private String type;
     private String color;

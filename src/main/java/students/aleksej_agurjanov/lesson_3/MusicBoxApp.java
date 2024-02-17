@@ -1,4 +1,6 @@
-package students.aleksej_agurjanov;
+package students.aleksej_agurjanov.lesson_3;
+
+import students.aleksej_agurjanov.lesson_3.MusicBox;
 
 public class MusicBoxApp {
 

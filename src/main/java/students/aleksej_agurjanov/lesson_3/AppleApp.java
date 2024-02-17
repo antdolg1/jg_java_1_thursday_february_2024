@@ -1,8 +1,8 @@
-package students.aleksej_agurjanov;
+package students.aleksej_agurjanov.lesson_3;
 
-import teacher.lesson_3_oop_first_look.lessoncode.;
+import students.aleksej_agurjanov.lesson_3.Apple;
 
-public class AppleApp {
+class AppleApp {
 
     public static void main(String[] args) {
         Apple apple1 = new Apple("Antonovka", "Red", 100);
