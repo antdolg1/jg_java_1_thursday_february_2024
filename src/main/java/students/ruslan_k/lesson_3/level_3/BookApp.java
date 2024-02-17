@@ -4,8 +4,10 @@ class BookApp {
 
     public static void main(String[] args) {
 
-        Book firstBook = new Book("Treasure Island", "Robert Louis Balfour Stevenson",1883,"First","Introduction","Second", "...");
-        Book secondBook = new Book("ABC", "Folks", 1200, "Uno","Vini Vidi Vici","Duo","Amat Victoria Curam");
+        Book firstBook = new Book("Treasure Island", "Robert Louis Balfour Stevenson",
+                1883,"First","Introduction","Second", "...");
+        Book secondBook = new Book("ABC", "Folks", 1200,
+                "Uno","Vini Vidi Vici","Duo","Amat Victoria Curam");
 
         System.out.println("First book is "+firstBook.getBookName()+", Author " + firstBook.getAuthor());
         System.out.println("Year of publishing: "+ firstBook.getYearOfPublish());
