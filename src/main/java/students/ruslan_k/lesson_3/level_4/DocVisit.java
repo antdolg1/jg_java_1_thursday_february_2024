@@ -9,6 +9,7 @@ public class DocVisit {
     boolean isPmVisit;
     Client client;
 
+
     DocVisit(){
         this.docFirstName="";
         this.docSecName="";
@@ -50,7 +51,7 @@ public class DocVisit {
     public void setVisitDate(String visitDate) {
         this.visitDate = visitDate;
     }
-
+//----------------------------------------------------------------------------------------------------------------------
     public class Client{
         String clientFirstName;
         String clientSecName;
