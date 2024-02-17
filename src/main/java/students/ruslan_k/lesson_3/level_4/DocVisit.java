@@ -41,6 +41,14 @@ public class DocVisit {
         return profile;
     }
 
+    public boolean getAmVisit(){
+        return isAmVisit;
+    }
+
+    public boolean getPmVisit(){
+        return isPmVisit;
+    }
+
     public void setDocFirstName(String docFirstName) {
         this.docFirstName = docFirstName;
     }
@@ -59,6 +67,14 @@ public class DocVisit {
 
     public void setVisitNr(int visitNr) {
         this.visitNr = visitNr;
+    }
+
+    public void setAmVisit(boolean amVisit) {
+        isAmVisit = amVisit;
+    }
+
+    public void setPmVisit(boolean pmVisit) {
+        isPmVisit = pmVisit;
     }
 
     //----------------------------------------------------------------------------------------------------------------------
