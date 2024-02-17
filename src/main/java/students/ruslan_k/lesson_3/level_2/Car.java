@@ -1,6 +1,6 @@
 package students.ruslan_k.lesson_3.level_2;
 
-public class Car {
+class Car {
     String marka;
     String color;
     double price;
@@ -11,26 +11,26 @@ public class Car {
         this.price=price;
     }
 
-    public String getColor() {
+    String getColor() {
         return color;
     }
 
-    public String getMarka() {
+    String getMarka() {
         return marka;
     }
 
-    public double getPrice() {
+    double getPrice() {
         return price;
     }
     void setMarka(String marka){
         this.marka=marka;
     }
 
-    public void setColor(String color) {
+    void setColor(String color) {
         this.color = color;
     }
 
-    public void setPrice(double price) {
+    void setPrice(double price) {
         this.price = price;
     }
 }
