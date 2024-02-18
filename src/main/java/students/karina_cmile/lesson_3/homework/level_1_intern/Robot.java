@@ -2,9 +2,12 @@ package students.karina_cmile.lesson_3.homework.level_1_intern;
 
 public class Robot {
 
-        String name;
+        private String name;
 
-        Robot (String name) {
+        public Robot (String name) {
             this.name = name;
         }
-        }
+    String getName() {
+        return name;
+    }
+}
