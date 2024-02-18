@@ -18,8 +18,7 @@ class Speaker {
             soundVol--;
     }
     void setisOn(boolean isOn){
-        if(!isOn)
-            this.soundVol=0;
+        this.soundVol=0;
         this.isOn=isOn;
     }
 
