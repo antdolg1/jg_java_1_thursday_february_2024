@@ -12,7 +12,7 @@ public class Task_9 {
         int A = scanner.nextInt();
 
 
-        int A1 = A * 1;
+        int A1 = A;
         int A2 = A * 2;
         int A3 = A * 3;
         int A4 = A * 4;
