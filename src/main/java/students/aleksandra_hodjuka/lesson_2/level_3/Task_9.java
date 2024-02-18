@@ -12,7 +12,6 @@ public class Task_9 {
         int A = scanner.nextInt();
 
 
-        int A1 = A;
         int A2 = A * 2;
         int A3 = A * 3;
         int A4 = A * 4;
@@ -23,7 +22,7 @@ public class Task_9 {
         int A9 = A * 9;
         int A10 = A * 10;
 
-        System.out.println(STR."\{A} *1 =\{A1}");
+        System.out.println(STR."\{A} *1 =\{A}");
         System.out.println(STR."\{A} *2 =\{A2}");
         System.out.println(STR."\{A} *3 =\{A3}");
         System.out.println(STR."\{A} *4 =\{A4}");
