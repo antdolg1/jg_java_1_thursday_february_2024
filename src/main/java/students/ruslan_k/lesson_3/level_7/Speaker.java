@@ -10,11 +10,11 @@ class Speaker {
         soundVol=0;
     }
     void incrVol(){
-        if(soundVol<10)
+        if(this.isOn && soundVol<10)
             soundVol++;
     }
     void decrVol(){
-        if(soundVol>0)
+        if(soundVol>0) //проверка вкл-выкл не нужна, т.к при выкл звук=0
             soundVol--;
     }
     void setisOn(boolean isOn){
