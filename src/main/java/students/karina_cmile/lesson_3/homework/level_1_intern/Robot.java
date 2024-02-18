@@ -7,7 +7,12 @@ public class Robot {
         public Robot (String name) {
             this.name = name;
         }
-    String getName() {
+
+        public String getName() {
         return name;
     }
+        public void setName(String name) {
+        this.name = name;
+    }
+
 }

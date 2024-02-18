@@ -14,5 +14,10 @@ public class RobotApp {
         String name2 = robot2.getName();
         System.out.println(robot2.getName());
 
+        robot1.setName("Robocop");
+        System.out.println(robot1.getName());
+        robot2.setName("Zimbabva");
+        System.out.println(robot2.getName());
+
     }
 }
