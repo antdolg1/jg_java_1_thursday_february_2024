@@ -5,11 +5,13 @@ import java.util.Scanner;
 public class Task_1 {
     public static void main(String[] args) {
 
-        System.out.print("Enter value of a: ");
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter value of a: ");
         int a = scanner.nextInt();
         System.out.print("Enter value of b: ");
         int b = scanner.nextInt();
+
+
 
         int sum = a + b;
         int sub = a - b;

@@ -1,6 +1,6 @@
 package students.ruslan_k.lesson_3.level_2;
 
-public class CarApp {
+class CarApp {
     public static void main(String[] args) {
         Car car1=new Car("Trabant", "Red", 1500.00);
         Car car2=new Car("Moskvich", "Orange", 2500.24);

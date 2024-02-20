@@ -2,7 +2,7 @@ package students.ruslan_k.lesson_2.level_3_junior;
 
 import java.util.Scanner;
 
-public class Task_11 {
+class Task_11 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int result=0;

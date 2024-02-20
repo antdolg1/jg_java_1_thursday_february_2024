@@ -1,4 +1,4 @@
-package students.aleksej_agurjanov.level_1;
+package students.aleksej_agurjanov.lesson_2.level_1;
 
 import java.util.Scanner;
 
