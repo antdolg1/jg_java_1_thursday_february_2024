@@ -8,10 +8,8 @@ public class RobotApp {
         Robot robot1 = new Robot ("Kosmophone");
         Robot robot2 = new Robot ("Limpopo");
 
-        String name1 = robot1.getName();
-        System.out.println(robot1.getName());
 
-        String name2 = robot2.getName();
+        System.out.println(robot1.getName());
         System.out.println(robot2.getName());
 
         robot1.setName("Robocop");
