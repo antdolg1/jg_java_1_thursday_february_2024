@@ -1,6 +1,6 @@
 package students.kristina_manevica.lesson_3.homework.level_1;
 
-public class RobotApp {
+class RobotApp {
     public static void main(String[] args) {
 
         Robot robotOne = new Robot("Valli");

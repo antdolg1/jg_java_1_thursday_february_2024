@@ -1,6 +1,6 @@
 package students.kristina_manevica.lesson_3.homework.level_3;
 
-public class Chapter {
+class Chapter {
 
     private String chapterTitle;
     private String text;

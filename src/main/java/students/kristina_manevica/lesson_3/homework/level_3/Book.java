@@ -1,6 +1,6 @@
 package students.kristina_manevica.lesson_3.homework.level_3;
 
-public class Book {
+class Book {
 
     private String title;
     private String author;

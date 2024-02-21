@@ -1,6 +1,6 @@
 package students.kristina_manevica.lesson_3.homework.level_2;
 
-public class Car {
+class Car {
 
     private String brand;
     private String color;

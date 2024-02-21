@@ -1,6 +1,6 @@
 package students.kristina_manevica.lesson_3.homework.level_1;
 
-public class Robot {
+class Robot {
 
     private String name;
 

@@ -1,6 +1,6 @@
 package students.kristina_manevica.lesson_3.homework.level_3;
 
-public class BookApp {
+class BookApp {
     public static void main(String[] args) {
 
         Chapter firstChapterBookOne = new Chapter("Paul", "I'm Paul Atreides!");

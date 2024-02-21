@@ -1,6 +1,6 @@
 package students.kristina_manevica.lesson_3.homework.level_2;
 
-public class CarApp {
+class CarApp {
     public static void main(String[] args) {
 
         Car carOne = new Car("Volvo", "grey", 14999.99);
