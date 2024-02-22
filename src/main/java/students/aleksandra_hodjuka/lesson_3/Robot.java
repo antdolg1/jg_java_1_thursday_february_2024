@@ -16,4 +16,3 @@ public class Robot {
         this.name = name;
     }
 }
-
