@@ -22,16 +22,16 @@ public class Task_9 {
         int A9 = A * 9;
         int A10 = A * 10;
 
-        System.out.println(STR."\{A} *1 =\{A}");
-        System.out.println(STR."\{A} *2 =\{A2}");
-        System.out.println(STR."\{A} *3 =\{A3}");
-        System.out.println(STR."\{A} *4 =\{A4}");
-        System.out.println(STR."\{A} *5 =\{A5}");
-        System.out.println(STR."\{A} *6 =\{A6}");
-        System.out.println(STR."\{A} *7 =\{A7}");
-        System.out.println(STR."\{A} *8 =\{A8}");
-        System.out.println(STR."\{A} *9 =\{A9}");
-        System.out.println(STR."\{A} *10 =\{A10}");
+//        System.out.println(STR."\{A} *1 =\{A}");
+//        System.out.println(STR."\{A} *2 =\{A2}");
+//        System.out.println(STR."\{A} *3 =\{A3}");
+//        System.out.println(STR."\{A} *4 =\{A4}");
+//        System.out.println(STR."\{A} *5 =\{A5}");
+//        System.out.println(STR."\{A} *6 =\{A6}");
+//        System.out.println(STR."\{A} *7 =\{A7}");
+//        System.out.println(STR."\{A} *8 =\{A8}");
+//        System.out.println(STR."\{A} *9 =\{A9}");
+//        System.out.println(STR."\{A} *10 =\{A10}");
 
 
 
