@@ -5,8 +5,8 @@ public class RobotApp {
         Robot Robot1 = new Robot("Alex");
         Robot Robot2 = new Robot("Max");
 
-        System.out.println(STR."Name of Robot1 =\{Robot1.getName()}");
-        System.out.println(STR."Name of Robot2 =\{Robot2.getName()}");
+        System.out.println("Name of Robot1 = " + Robot1.getName());
+        System.out.println("Name of Robot2 = " + Robot2.getName());
 
         Robot1.setName("Alexandrs");
         Robot2.setName("Maximilians");
