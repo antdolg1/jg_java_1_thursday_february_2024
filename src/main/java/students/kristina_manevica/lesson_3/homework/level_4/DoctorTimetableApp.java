@@ -24,11 +24,10 @@ class DoctorTimetableApp {
         String secondDoctorMorningPatient = secondDoctorMorningVisit.getPatientName() + ", " + secondDoctorMorningVisit.getDiagnosis() + ", " + secondDoctorMorningVisit.getPrice() + " euro";
         String secondDoctorLunchPatient = secondDoctorLunchVisit.getPatientName() + ", " + secondDoctorLunchVisit.getDiagnosis() + ", " + secondDoctorLunchVisit.getPrice() + " euro";
 
-        String firstDoctorTimetableData = firstDoctorTimetable + firstDoctorMorningPatient + firstDoctorLunchPatient;
-        String secondDoctorTimetableData = secondDoctorTimetable + secondDoctorMorningPatient + secondDoctorLunchPatient;
+        String firstDoctorTimetableData = firstDoctorTimetable.getDoctorName() + ", " + firstDoctorTimetable.getDoctorSpeciality() + ", " + firstDoctorTimetable.getDate() + ", " + firstDoctorMorningPatient + firstDoctorLunchPatient;
+        String secondDoctorTimetableData = secondDoctorTimetable.getDoctorName() + ", " + secondDoctorTimetable.getDoctorSpeciality() + ", " + secondDoctorTimetable.getDate() + ", " + secondDoctorMorningPatient + secondDoctorLunchPatient;
 
-        System.out.println("First doctor timetable: " + firstDoctorTimetable);
-        System.out.println("First doctor : ");
-        System.out.println();
+        System.out.println("First doctor timetable: " + firstDoctorTimetableData);
+        System.out.println("Second doctor timetable: " + secondDoctorTimetableData);
     }
 }
