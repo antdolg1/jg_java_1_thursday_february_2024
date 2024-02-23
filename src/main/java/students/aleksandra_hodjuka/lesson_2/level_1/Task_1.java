@@ -18,10 +18,10 @@ public class Task_1 {
         int mul = A * B;
         int div = A / B;
 
-        System.out.println(STR."The sum of numbers is \{sum}");
-        System.out.println(STR."The subtraction of numbers is \{sub}");
-        System.out.println(STR."The multiplication of numbers is \{mul}");
-        System.out.println(STR."The division of numbers is \{div}");
+        System.out.println("The sum of numbers is " + sum);
+        System.out.println("The subtraction of numbers is " + sub);
+        System.out.println("The multiplication of numbers is " + mul);
+        System.out.println("The division of numbers is " + div);
 
 
     }

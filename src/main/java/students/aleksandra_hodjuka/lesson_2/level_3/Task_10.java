@@ -15,8 +15,8 @@ public class Task_10 {
          double area = p * R * R;
 
 
-        System.out.println(STR."Perimeter is = \{perimeter}");
-        System.out.println(STR."Area is = \{area}");
+        System.out.println("Perimeter is = " + perimeter);
+        System.out.println("Area is = " + area);
 
 
 

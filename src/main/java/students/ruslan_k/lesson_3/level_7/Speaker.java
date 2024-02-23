@@ -24,9 +24,9 @@ class Speaker {
 
     void getIsOn(){
         if(isOn)
-            System.out.println(STR."Speaker \{this.model} is ON and sound volume is \{this.soundVol}");
+            System.out.println("Speaker is ON and sound volume is " + soundVol);
         else
-            System.out.println(STR."Speaker \{this.model} is Off");
+            System.out.println("Speaker is Off");
     }
     int getSoundVol() {
         return soundVol;

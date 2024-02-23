@@ -5,7 +5,7 @@ class BankAccount {
     private String owner;
     private int moneyAmount;
 
-    BankAccount(String owner,int moneyAmount) {
+    BankAccount(String owner, int moneyAmount) {
         this.owner = owner;
         this.moneyAmount=moneyAmount;
     }
@@ -14,8 +14,8 @@ class BankAccount {
         return this.owner;
     }
 
-    String getMoney() {
-        return STR."\{this.moneyAmount}";
+    int getMoney() {
+        return this.moneyAmount;
     }
 
 }
@@ -25,7 +25,7 @@ class BankAccountDemo {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("Viktor", 100000);
         String owner = bankAccount.getOwner();
-        String money = bankAccount.getMoney();
+        int money = bankAccount.getMoney();
         System.out.println("Owner = " + owner);
         System.out.println("Money = " + money);
     }
