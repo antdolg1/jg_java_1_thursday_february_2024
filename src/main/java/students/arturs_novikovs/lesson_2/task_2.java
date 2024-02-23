@@ -4,7 +4,9 @@ import java.util.Scanner;
 public class task_2{
 public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
+    System.out.println("Введите число.");
     double firstDoubleNumber = scanner.nextDouble();
+    System.out.println("Введите второе число");
     double secondDoubleNember = scanner.nextDouble();
     double sum = firstDoubleNumber + secondDoubleNember;
     double sub = firstDoubleNumber - secondDoubleNember;

@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class task_1 {
     public static void main(String[] args) {
+        System.out.println("Введите число.");
         Scanner scanner = new Scanner(System.in);
         int firstNumber = scanner.nextInt();
+        System.out.println("Введите второе число");
         int secondNumber = scanner.nextInt();
         int sum = firstNumber + secondNumber;
         int sub = firstNumber - secondNumber;
