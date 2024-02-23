@@ -27,10 +27,14 @@ public class Dog {
     }
 
     public void bark() {
-        System.out.println("My nickname is" + name);
+        System.out.println("My nickname is " + name);
     }
 
     public void celebrateBirthday() {
         this.age = this.age + 1;
+    }
+
+    public void sayMyName() {
+        System.out.println("I'm " + age + " years");
     }
 }

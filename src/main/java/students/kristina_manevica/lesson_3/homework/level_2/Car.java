@@ -24,15 +24,15 @@ class Car {
         return price;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void setBrand(String newBrand) {
+        this.brand = newBrand;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setColor(String newColor) {
+        this.color = newColor;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setPrice(double newPrice) {
+        this.price = newPrice;
     }
 }

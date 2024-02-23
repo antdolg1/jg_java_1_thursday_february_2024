@@ -5,17 +5,10 @@ public class DogApp {
 
         Dog dog = new Dog("Mailo", 2);
 
-        //String dogName = dog.getName();
         dog.bark();
 
-        dog.getAge();
-
         dog.celebrateBirthday();
 
-        dog.getAge();
-
-        dog.celebrateBirthday();
-
-        dog.getAge();
+        dog.sayMyName();
     }
 }

@@ -5,11 +5,11 @@ class DoctorTimetable {
     private String doctorName;
     private String doctorSpeciality;
     private String date;
-    private DoctorAppointment morningAppointment;
-    private DoctorAppointment lunchAppointment;
+    private AppointmentTime morningAppointment;
+    private AppointmentTime lunchAppointment;
 
     public DoctorTimetable(String doctorName, String doctorSpeciality, String date,
-                           DoctorAppointment morningAppointment, DoctorAppointment lunchAppointment) {
+                           AppointmentTime morningAppointment, AppointmentTime lunchAppointment) {
         this.doctorName = doctorName;
         this.doctorSpeciality = doctorSpeciality;
         this.date = date;
@@ -29,11 +29,11 @@ class DoctorTimetable {
         return date;
     }
 
-    public DoctorAppointment getMorningAppointment() {
+    public AppointmentTime getMorningAppointment() {
         return morningAppointment;
     }
 
-    public DoctorAppointment getLunchAppointment() {
+    public AppointmentTime getLunchAppointment() {
         return lunchAppointment;
     }
 }
