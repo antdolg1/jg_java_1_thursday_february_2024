@@ -2,7 +2,7 @@ package students.ruslan_k.lesson_4.level_1;
 
 import java.util.Scanner;
 
-public class OtherIntCheck {
+class OtherIntCheck {
     public static void main(String[] args) {
 
 
