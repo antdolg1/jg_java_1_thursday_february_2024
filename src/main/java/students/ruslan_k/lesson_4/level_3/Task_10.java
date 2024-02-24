@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task_10 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int userNr1, userNr2, userNr3;
+        int userNr1;  //userNr2, userNr3;
 
         /*
         System.out.print("PLease enter new 1-st INT ");
