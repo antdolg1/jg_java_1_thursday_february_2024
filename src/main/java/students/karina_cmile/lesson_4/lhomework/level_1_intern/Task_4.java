@@ -8,4 +8,5 @@ public class Task_4 {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
 
+    }
 }
