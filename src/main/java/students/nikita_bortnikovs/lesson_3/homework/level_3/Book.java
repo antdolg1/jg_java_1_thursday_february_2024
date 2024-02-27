@@ -7,25 +7,22 @@ public class Book {
     int chapterAmount;
 
 
-
-    Book(String bookName, String author, int chapterAmount,int yearPublished){
-        this.bookName=bookName;
-        this.author=author;
-        this.yearPublished=yearPublished;
-        this.chapterAmount=chapterAmount;
+    Book(String bookName, String author, int chapterAmount, int yearPublished) {
+        this.bookName = bookName;
+        this.author = author;
+        this.yearPublished = yearPublished;
+        this.chapterAmount = chapterAmount;
     }
-
-
-    String getBookName(){
+    String getBookName() {
         return this.bookName;
     }
-    String getAuthor(){
+    String getAuthor() {
         return this.author;
     }
-    int getYearPublished(){
+    int getYearPublished() {
         return this.yearPublished;
     }
-    int getChapterAmount(){
+    int getChapterAmount() {
         return this.chapterAmount;
     }
 }
