@@ -3,7 +3,7 @@ package students.ruslan_k.lesson_2.level_3_junior;
 
 import java.util.Scanner;
 
-public class Task_10 {
+class Task_10 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Radius : ");
