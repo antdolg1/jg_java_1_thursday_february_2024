@@ -21,4 +21,14 @@ class Calculator {
     public boolean isEven(int number) {
         return (number % 2 == 0) ? true : false;
     }
+
+    public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
+        if (firstNumber > secondNumber) {
+            return firstNumber;
+        } else if (firstNumber < secondNumber) {
+            return secondNumber;
+        } else {
+            return firstNumber;
+        }
+    }
 }

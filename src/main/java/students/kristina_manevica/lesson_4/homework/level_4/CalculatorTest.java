@@ -9,6 +9,7 @@ class CalculatorTest {
         calculatorTest.multipleTest();
         calculatorTest.divisionTest();
         calculatorTest.evenTest();
+        calculatorTest.maxNumberTest();
     }
 
     public void sumTest() {
@@ -63,5 +64,25 @@ class CalculatorTest {
 
         boolean isActualResult = calculator.isEven(number);
         System.out.println((isActualResult == isExpectedResult) ? "Even test = Even number" : "Even test = Odd number");
+    }
+
+    public void maxNumberTest() {
+        int numberOne = 10;
+        int numberTwo = 5;
+        int numberThree = 5;
+        int expectedResultOne = numberOne;
+        int expectedResultTwo = numberOne;
+        int expectedResultThree = numberTwo;
+
+        Calculator calculator = new Calculator();
+
+        int actualResultOne = calculator.maxOfTwoNumbers(numberOne, numberTwo);
+        System.out.println((actualResultOne == expectedResultOne) ? "First max number" : "Max number test failed!");
+
+        int actualResultTwo = calculator.maxOfTwoNumbers(numberTwo, numberOne);
+        System.out.println((actualResultTwo == expectedResultTwo) ? "Second max number" : "Max number test failed!");
+
+        int actualResultThree = calculator.maxOfTwoNumbers(numberTwo, numberThree);
+        System.out.println((actualResultThree == expectedResultThree) ? "Numbers equals" : "Max number test failed!");
     }
 }
