@@ -1,7 +1,6 @@
 package students.aleksandra_hodjuka.lesson_3;
 
 public class Robot {
-
     String name;
 
     public Robot(String name) {
@@ -17,5 +16,3 @@ public class Robot {
         this.name = name;
     }
 }
-
-
