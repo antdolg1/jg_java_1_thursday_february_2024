@@ -1,7 +1,7 @@
 package students.aleksandra_hodjuka.lesson_3.level_3;
 
 
-public class BookApp {
+ class BookApp {
 
 
     public static void main(String[] args) {

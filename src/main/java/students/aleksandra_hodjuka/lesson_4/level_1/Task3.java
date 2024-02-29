@@ -1,8 +1,8 @@
-package students.aleksandra_hodjuka.lesson_4.Level_1;
+package students.aleksandra_hodjuka.lesson_4.level_1;
 
 import java.util.Scanner;
 
-public class Task3 {
+ class Task3 {
 
     public static void main(String[] args) {
 

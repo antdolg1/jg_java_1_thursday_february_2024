@@ -1,8 +1,8 @@
-package students.aleksandra_hodjuka.lesson_4.Level_1;
+package students.aleksandra_hodjuka.lesson_4.level_1;
 
 import java.util.Scanner;
 
-public class Task2 {
+ class Task2 {
 
     public static void main(String[] args) {
         System.out.println("Пожалуйста, введите любое целое число!");

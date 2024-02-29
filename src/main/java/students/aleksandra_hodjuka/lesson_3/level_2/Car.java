@@ -1,12 +1,12 @@
 package students.aleksandra_hodjuka.lesson_3.level_2;
 
-public class Car {
+ class Car {
     String model;
     String color;
     Double price;
 
 
-    public Car(String model, String color, Double price) {
+     Car(String model, String color, Double price) {
         this.model = model;
         this.color = color;
         this.price = price;

@@ -1,8 +1,8 @@
-package students.aleksandra_hodjuka.lesson_4.Level_2;
+package students.aleksandra_hodjuka.lesson_4.level_2;
 
 import java.util.Scanner;
 
-public class Task7 {
+ class Task7 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

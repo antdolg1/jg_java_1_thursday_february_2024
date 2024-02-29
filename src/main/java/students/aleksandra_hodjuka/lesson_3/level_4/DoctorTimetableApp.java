@@ -3,7 +3,7 @@ package students.aleksandra_hodjuka.lesson_3.level_4;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class DoctorTimetableApp {
+ class DoctorTimetableApp {
     String nameOfTheDoctor1 = "SCOTT";
     String nameOfTheDoctor2 = "WHITE";
 

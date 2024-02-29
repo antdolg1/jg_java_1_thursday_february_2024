@@ -1,8 +1,8 @@
-package students.aleksandra_hodjuka.lesson_4.Level_3;
+package students.aleksandra_hodjuka.lesson_4.level_3;
 
 import java.util.Scanner;
 
-public class Task9 {
+ class Task10 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -13,15 +13,10 @@ public class Task9 {
         System.out.println("Please, enter the third number!");
         int C = scanner.nextInt();
 
-        if (A < B && B < C) {
-            System.out.println("increasing");
-        } else if (A > B && B > C) System.out.println("decreasing");
-
-         else {
-            System.out.println("Neither increasing or decreasing order");
-        }
-
-
+        if (A > B && A > C) {
+            System.out.println(A);
+        } else if (B > A && B > C) System.out.println(B);
+        else if (C > A && C > B) System.out.println(C);
 
 
     }

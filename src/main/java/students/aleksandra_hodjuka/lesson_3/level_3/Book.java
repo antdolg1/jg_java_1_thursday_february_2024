@@ -1,6 +1,6 @@
 package students.aleksandra_hodjuka.lesson_3.level_3;
 
-public class Book {
+ class Book {
     String title;
     String author;
     String yearOfPrint;

@@ -1,6 +1,6 @@
-package students.aleksandra_hodjuka.lesson_4.Level_4;
+package students.aleksandra_hodjuka.lesson_4.level_4;
 
-public class Calculator {
+ class Calculator {
 
 
     int firstNumber;

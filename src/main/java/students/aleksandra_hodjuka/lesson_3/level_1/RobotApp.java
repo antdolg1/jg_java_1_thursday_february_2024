@@ -1,6 +1,6 @@
 package students.aleksandra_hodjuka.lesson_3.level_1;
 
-public class RobotApp {
+ class RobotApp {
 
     public static void main(String[] args) {
 

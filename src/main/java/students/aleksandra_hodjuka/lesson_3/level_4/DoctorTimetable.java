@@ -1,6 +1,6 @@
 package students.aleksandra_hodjuka.lesson_3.level_4;
 
-public class DoctorTimetable {
+ class DoctorTimetable {
 
     String nameOfTheDoctor;
     String speciality;
@@ -11,7 +11,7 @@ public class DoctorTimetable {
     String diagnose;
     int price;
 
-    public DoctorTimetable(String nameOfTheDoctor, String speciality, String dateOfAppointment,
+     DoctorTimetable(String nameOfTheDoctor, String speciality, String dateOfAppointment,
                             String timeOfAppointment1, String timeOfAppointment2,String nameOfThePatient, String diagnose, int price) {
         this.nameOfTheDoctor = nameOfTheDoctor;
         this.speciality = speciality;
