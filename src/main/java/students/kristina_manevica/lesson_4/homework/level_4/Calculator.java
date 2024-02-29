@@ -1,5 +1,7 @@
 package students.kristina_manevica.lesson_4.homework.level_4;
 
+import java.security.PublicKey;
+
 class Calculator {
 
     public int sum(int firstNumber, int secondNumber) {
@@ -29,6 +31,16 @@ class Calculator {
             return secondNumber;
         } else {
             return firstNumber;
+        }
+    }
+
+    public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
+        if (firstNumber >= secondNumber && firstNumber >= thirdNumber) {
+            return firstNumber;
+        } else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) {
+            return secondNumber;
+        } else {
+            return thirdNumber;
         }
     }
 }

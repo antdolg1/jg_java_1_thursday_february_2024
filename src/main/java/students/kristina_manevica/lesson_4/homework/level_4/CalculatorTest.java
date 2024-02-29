@@ -9,7 +9,8 @@ class CalculatorTest {
         calculatorTest.multipleTest();
         calculatorTest.divisionTest();
         calculatorTest.evenTest();
-        calculatorTest.maxNumberTest();
+        calculatorTest.maxTwoNumbersTest();
+        calculatorTest.maxThreeNumbersTest();
     }
 
     public void sumTest() {
@@ -66,13 +67,11 @@ class CalculatorTest {
         System.out.println((isActualResult == isExpectedResult) ? "Even test = Even number" : "Even test = Odd number");
     }
 
-    public void maxNumberTest() {
+    public void maxTwoNumbersTest() {
         int numberOne = 10;
         int numberTwo = 5;
-        int numberThree = 5;
         int expectedResultOne = numberOne;
-        int expectedResultTwo = numberOne;
-        int expectedResultThree = numberTwo;
+        int expectedResultTwo = numberTwo;
 
         Calculator calculator = new Calculator();
 
@@ -80,9 +79,39 @@ class CalculatorTest {
         System.out.println((actualResultOne == expectedResultOne) ? "First max number" : "Max number test failed!");
 
         int actualResultTwo = calculator.maxOfTwoNumbers(numberTwo, numberOne);
-        System.out.println((actualResultTwo == expectedResultTwo) ? "Second max number" : "Max number test failed!");
+        System.out.println((actualResultTwo == expectedResultOne) ? "Second max number" : "Max number test failed!");
 
-        int actualResultThree = calculator.maxOfTwoNumbers(numberTwo, numberThree);
-        System.out.println((actualResultThree == expectedResultThree) ? "Numbers equals" : "Max number test failed!");
+        int actualResultThree = calculator.maxOfTwoNumbers(numberTwo, numberTwo);
+        System.out.println((actualResultThree == expectedResultTwo) ? "Numbers equals" : "Max number test failed!");
+    }
+
+    public void maxThreeNumbersTest() {
+        int numberOne = 4;
+        int numberTwo = 3;
+        int numberThree = 2;
+        int expectedResult = numberOne;
+
+        Calculator calculator = new Calculator();
+
+        int actualResultOne = calculator.maxOfThreeNumbers(numberOne, numberOne, numberOne);
+        System.out.println((actualResultOne == expectedResult) ? "Rule a=b=c" : "Max number test failed!");
+
+        int actualResultTwo = calculator.maxOfThreeNumbers(numberOne, numberTwo, numberThree);
+        System.out.println((actualResultTwo == expectedResult) ? "Rule a>b && a>c" : "Max number test failed!");
+
+        int actualResultThree = calculator.maxOfThreeNumbers(numberTwo, numberOne, numberThree);
+        System.out.println((actualResultThree == expectedResult) ? "Rule b>a && b>c" : "Max number test failed!");
+
+        int actualResultFour = calculator.maxOfThreeNumbers(numberTwo, numberThree, numberOne);
+        System.out.println((actualResultFour == expectedResult) ? "Rule c>a && c>b" : "Max number test failed!");
+
+        int actualResultFive = calculator.maxOfThreeNumbers(numberOne, numberOne, numberTwo);
+        System.out.println((actualResultFive == expectedResult) ? "Rule a=b>c" : "Max number test failed!");
+
+        int actualResultSix = calculator.maxOfThreeNumbers(numberOne, numberTwo, numberOne);
+        System.out.println((actualResultSix == expectedResult) ? "Rule a=c>b" : "Max number test failed!");
+
+        int actualResultSeven = calculator.maxOfThreeNumbers(numberTwo, numberOne, numberOne);
+        System.out.println((actualResultSeven == expectedResult) ? "Rule b=c>a" : "Max number test failed!");
     }
 }
