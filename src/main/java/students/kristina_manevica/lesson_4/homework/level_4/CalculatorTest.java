@@ -1,9 +1,13 @@
 package students.kristina_manevica.lesson_4.homework.level_4;
 
 class CalculatorTest {
+
+    Calculator calculator = new Calculator();
+
     public static void main(String[] args) {
 
         CalculatorTest calculatorTest = new CalculatorTest();
+
         calculatorTest.sumTest();
         calculatorTest.minusTest();
         calculatorTest.multipleTest();
@@ -13,15 +17,20 @@ class CalculatorTest {
         calculatorTest.maxThreeNumbersTest();
     }
 
+    private void checkIntResult(int actualResult, int expectedResult) {
+        System.out.println((actualResult == expectedResult) ? "Test passed" : "Error");
+    }
+
+    private void checkBooleanResult(boolean actualResult, boolean expectedResult) {
+        System.out.println((actualResult == expectedResult) ? "Test passed" : "Error");
+    }
+
     public void sumTest() {
         int firstNumber = 10;
         int secondNumber = 5;
         int expectedResult = 15;
 
-        Calculator calculator = new Calculator();
-
-        int actualResult = calculator.sum(firstNumber, secondNumber);
-        System.out.println((actualResult == expectedResult) ? "Sum test = OK" : "Sum test = FAIL");
+        checkIntResult((calculator.sum(firstNumber, secondNumber)), expectedResult);
     }
 
     public void minusTest() {
@@ -29,10 +38,7 @@ class CalculatorTest {
         int secondNumber = 5;
         int expectedResult = 5;
 
-        Calculator calculator = new Calculator();
-
-        int actualResult = calculator.minus(firstNumber, secondNumber);
-        System.out.println((actualResult == expectedResult) ? "Minus test = OK" : "Minus test = FAIL");
+        checkIntResult((calculator.minus(firstNumber, secondNumber)), expectedResult);
     }
 
     public void multipleTest() {
@@ -40,10 +46,7 @@ class CalculatorTest {
         int secondNumber = 5;
         int expectedResult = 50;
 
-        Calculator calculator = new Calculator();
-
-        int actualResult = calculator.multiple(firstNumber, secondNumber);
-        System.out.println((actualResult == expectedResult) ? "Multiple test = OK" : "Multiple test = FAIL");
+        checkIntResult((calculator.multiple(firstNumber, secondNumber)), expectedResult);
     }
 
     public void divisionTest() {
@@ -51,20 +54,14 @@ class CalculatorTest {
         int secondNumber = 5;
         int expectedResult = 2;
 
-        Calculator calculator = new Calculator();
-
-        int actualResult = calculator.division(firstNumber, secondNumber);
-        System.out.println((actualResult == expectedResult) ? "Division test = OK" : "Division test = FAIL");
+        checkIntResult((calculator.division(firstNumber, secondNumber)), expectedResult);
     }
 
     public void evenTest() {
         int number = 9;
         boolean isExpectedResult = true;
 
-        Calculator calculator = new Calculator();
-
-        boolean isActualResult = calculator.isEven(number);
-        System.out.println((isActualResult == isExpectedResult) ? "Even test = Even number" : "Even test = Odd number");
+        checkBooleanResult((calculator.isEven(number)), isExpectedResult);
     }
 
     public void maxTwoNumbersTest() {
@@ -73,16 +70,11 @@ class CalculatorTest {
         int expectedResultOne = numberOne;
         int expectedResultTwo = numberTwo;
 
-        Calculator calculator = new Calculator();
+        checkIntResult((calculator.maxOfTwoNumbers(numberOne, numberTwo)), expectedResultOne);
 
-        int actualResultOne = calculator.maxOfTwoNumbers(numberOne, numberTwo);
-        System.out.println((actualResultOne == expectedResultOne) ? "First max number" : "Max number test failed!");
+        checkIntResult((calculator.maxOfTwoNumbers(numberTwo, numberOne)), expectedResultOne);
 
-        int actualResultTwo = calculator.maxOfTwoNumbers(numberTwo, numberOne);
-        System.out.println((actualResultTwo == expectedResultOne) ? "Second max number" : "Max number test failed!");
-
-        int actualResultThree = calculator.maxOfTwoNumbers(numberTwo, numberTwo);
-        System.out.println((actualResultThree == expectedResultTwo) ? "Numbers equals" : "Max number test failed!");
+        checkIntResult((calculator.maxOfTwoNumbers(numberTwo, numberTwo)), expectedResultTwo);
     }
 
     public void maxThreeNumbersTest() {
@@ -91,27 +83,19 @@ class CalculatorTest {
         int numberThree = 2;
         int expectedResult = numberOne;
 
-        Calculator calculator = new Calculator();
-
-        int actualResultOne = calculator.maxOfThreeNumbers(numberOne, numberOne, numberOne);
-        System.out.println((actualResultOne == expectedResult) ? "Rule a=b=c" : "Max number test failed!");
-
-        int actualResultTwo = calculator.maxOfThreeNumbers(numberOne, numberTwo, numberThree);
-        System.out.println((actualResultTwo == expectedResult) ? "Rule a>b && a>c" : "Max number test failed!");
-
-        int actualResultThree = calculator.maxOfThreeNumbers(numberTwo, numberOne, numberThree);
-        System.out.println((actualResultThree == expectedResult) ? "Rule b>a && b>c" : "Max number test failed!");
-
-        int actualResultFour = calculator.maxOfThreeNumbers(numberTwo, numberThree, numberOne);
-        System.out.println((actualResultFour == expectedResult) ? "Rule c>a && c>b" : "Max number test failed!");
-
-        int actualResultFive = calculator.maxOfThreeNumbers(numberOne, numberOne, numberTwo);
-        System.out.println((actualResultFive == expectedResult) ? "Rule a=b>c" : "Max number test failed!");
-
-        int actualResultSix = calculator.maxOfThreeNumbers(numberOne, numberTwo, numberOne);
-        System.out.println((actualResultSix == expectedResult) ? "Rule a=c>b" : "Max number test failed!");
-
-        int actualResultSeven = calculator.maxOfThreeNumbers(numberTwo, numberOne, numberOne);
-        System.out.println((actualResultSeven == expectedResult) ? "Rule b=c>a" : "Max number test failed!");
+        //"Rule a=b=c"
+        checkIntResult((calculator.maxOfThreeNumbers(numberOne, numberOne, numberOne)), expectedResult);
+        //"Rule a>b && a>c"
+        checkIntResult((calculator.maxOfThreeNumbers(numberOne, numberTwo, numberThree)), expectedResult);
+        //"Rule b>a && b>c"
+        checkIntResult((calculator.maxOfThreeNumbers(numberTwo, numberOne, numberThree)), expectedResult);
+        //"Rule c>a && c>b"
+        checkIntResult((calculator.maxOfThreeNumbers(numberTwo, numberThree, numberOne)), expectedResult);
+        //"Rule a=b>c"
+        checkIntResult((calculator.maxOfThreeNumbers(numberOne, numberOne, numberTwo)), expectedResult);
+        //"Rule a=c>b"
+        checkIntResult((calculator.maxOfThreeNumbers(numberOne, numberTwo, numberOne)), expectedResult);
+        //"Rule b=c>a"
+        checkIntResult((calculator.maxOfThreeNumbers(numberTwo, numberOne, numberOne)), expectedResult);
     }
 }
