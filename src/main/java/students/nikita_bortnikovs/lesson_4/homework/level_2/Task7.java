@@ -8,12 +8,10 @@ public class Task7 {
         Scanner scanner = new Scanner(System.in);
         int number1 = scanner.nextInt();
         int number2 = scanner.nextInt();
-        if (number1 % 1 == 0 && number2 % 1 == 0 && number1 == number2) {
+        if (number1 == number2) {
             System.out.println("same");
-        } else if (number1 % 1 == 0 && number2 % 1 == 0 && number1 > number2 || number1 < number2) {
-            System.out.println("You entered diff numbers");
         } else {
-            System.out.println("Something went wrong");
+            System.out.println("You entered diff numbers");
         }
     }
 }

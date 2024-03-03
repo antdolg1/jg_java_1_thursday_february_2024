@@ -13,7 +13,7 @@ public class CalTest {
     public void sumTest() {
         int firstNumber = 10;
         int secondNumber = 5;
-        int expectedResult = 16;
+        int expectedResult = 15;
         Cal cal = new Cal();
         int realResult = cal.sum(firstNumber, secondNumber);
         if (realResult == expectedResult) {
@@ -26,7 +26,7 @@ public class CalTest {
     public void minTest() {
         int firstNumber = 10;
         int secondNumber = 5;
-        int expectedResult = 15;
+        int expectedResult = 5;
         Cal cal = new Cal();
         int realResult = cal.min(firstNumber, secondNumber);
         if (realResult == expectedResult) {
