@@ -3,7 +3,7 @@ package teacher.lesson_2.lessoncode;
 public class PrimitiveVars {
     public static void main(String[] args) {
 
-        byte age = 12
+        byte age = 12;
         short speed = 200;
         int idNumber = 121212121;
         long accountNr = 123456789;
