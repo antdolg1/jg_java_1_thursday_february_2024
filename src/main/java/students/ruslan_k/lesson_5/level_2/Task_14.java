@@ -10,7 +10,7 @@ class IntsArrayWithAverageOutput{
             sum+=array[i];
             System.out.printf("%s-й элемент массива есть %s\n", i+1, array[i]);
         }
-        average=sum/3.0;
+        average=sum/(double)array.length;
         System.out.printf("Average of all elements is %s\n", average);
     }
 

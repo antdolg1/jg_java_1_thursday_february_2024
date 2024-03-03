@@ -6,10 +6,10 @@ class ArrayFillsWithConsoleInput {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int[] array = new int[3];
-        for(int arrayElement : array){
+        for(int i=0; i< array.length; i++){
             System.out.print("Please input new Int: ");
-            arrayElement=scan.nextInt();
-            System.out.printf("New Array Element is %s\n", arrayElement);
+            array[i]=scan.nextInt();
+            System.out.printf("New Array Element is %s\n", array[i]);
         }
     }
 }

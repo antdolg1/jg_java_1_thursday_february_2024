@@ -45,7 +45,6 @@ class ArrayUtil {
     }
 
     public int findMinNumber(int[] array) {
-        if (array.length != 0) {
             int result = array[0];
             for (int currentItem : array) {
                 if (result > currentItem) {
@@ -53,10 +52,6 @@ class ArrayUtil {
                 }
             }
             return result;
-        } else {
-            System.out.println("It's Zero-Length array");
-            return -1;
-        }
     }
 
     public void fillArrayConsole(int[] array) {
