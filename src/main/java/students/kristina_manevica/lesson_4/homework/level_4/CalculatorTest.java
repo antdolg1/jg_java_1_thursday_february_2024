@@ -26,11 +26,8 @@ class CalculatorTest {
     }
 
     public void sumTest() {
-        int firstNumber = 10;
-        int secondNumber = 5;
-        int expectedResult = 15;
 
-        checkIntResult((calculator.sum(firstNumber, secondNumber)), expectedResult);
+        checkIntResult((calculator.sum(10, 5)), 15);
     }
 
     public void minusTest() {
