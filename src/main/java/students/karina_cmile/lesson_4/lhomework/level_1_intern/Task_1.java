@@ -11,7 +11,7 @@ public class Task_1 {
         if (number > 0) {
             System.out.println(number + " is positive");
         } else if (number == 0) {
-            System.out.println("Please enter the integer number.");
+            System.out.println("Please enter another integer number: ");
         } else if (number < 0) {
             System.out.println(number + " is negative");
         }

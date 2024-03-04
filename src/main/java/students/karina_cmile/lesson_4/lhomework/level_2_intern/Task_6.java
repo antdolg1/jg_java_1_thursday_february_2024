@@ -15,7 +15,7 @@ public class Task_6 {
         } else if (number1 < number2) {
             System.out.println(number1 + " is the smallest number");
         } else {
-            System.out.println("Please enter the different numbers!");
+            System.out.println(number1 + " and " + number2 + " are the same numbers");
         }
     }
 }

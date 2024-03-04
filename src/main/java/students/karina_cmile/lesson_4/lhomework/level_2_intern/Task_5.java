@@ -15,7 +15,7 @@ public class Task_5 {
         } else if (number1 < number2) {
             System.out.println(number2 + " is the biggest number");
         } else {
-            System.out.println("Please enter the different numbers!");
+            System.out.println(number1 + " and " + number2 + " are the same numbers");
         }
     }
 }
