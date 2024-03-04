@@ -1,6 +1,6 @@
 package students.aleksandra_hodjuka.lesson_4.level_4;
 
- class Calculator {
+class Calculator {
 
 
     int firstNumber;
@@ -14,18 +14,28 @@ package students.aleksandra_hodjuka.lesson_4.level_4;
     public int sub1(int firstNumber, int secondNumber) {
         return firstNumber - secondNumber;
     }
+
     public int sub2(int secondNumber, int firstNumber) {
         return secondNumber - firstNumber;
     }
+
     public int mul(int firstNumber, int secondNumber) {
         return firstNumber * secondNumber;
     }
+
     public int div1(int firstNumber, int secondNumber) {
         return firstNumber / secondNumber;
     }
+
     public int div2(int secondNumber, int firstNumber) {
         return secondNumber / firstNumber;
     }
 
-
+    public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
+        System.out.println(Math.max(firstNumber, secondNumber));
+        return firstNumber;
+    }
 }
+
+
+
