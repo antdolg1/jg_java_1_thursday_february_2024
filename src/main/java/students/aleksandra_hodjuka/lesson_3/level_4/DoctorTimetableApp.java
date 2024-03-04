@@ -1,12 +1,10 @@
 package students.aleksandra_hodjuka.lesson_3.level_4;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
- class DoctorTimetableApp {
+class DoctorTimetableApp {
     String nameOfTheDoctor1 = "SCOTT";
     String nameOfTheDoctor2 = "WHITE";
-
 
     public static void main(String[] args) {
 
@@ -44,9 +42,5 @@ import java.util.Scanner;
         } else {
             System.out.println("Unknown doctor");
         }
-
-
     }
-
-
 }

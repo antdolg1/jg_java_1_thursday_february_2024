@@ -2,7 +2,7 @@ package students.aleksandra_hodjuka.lesson_4.level_3;
 
 import java.util.Scanner;
 
- class Task10 {
+class Task10 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -15,9 +15,10 @@ import java.util.Scanner;
 
         if (A > B && A > C) {
             System.out.println(A);
-        } else if (B > A && B > C) System.out.println(B);
-        else if (C > A && C > B) System.out.println(C);
-
-
+        } else if (B > A && B > C) {
+            System.out.println(B);
+        } else if (C > A && C > B) {
+            System.out.println(C);
+        }
     }
 }
