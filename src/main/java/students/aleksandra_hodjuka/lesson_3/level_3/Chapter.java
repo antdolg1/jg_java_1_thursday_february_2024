@@ -2,12 +2,12 @@ package students.aleksandra_hodjuka.lesson_3.level_3;
 
 class Chapter {
     String chapterTitle;
-    String Text;
+    String text;
 
 
     public Chapter(String chapterTitle, String text) {
         this.chapterTitle = chapterTitle;
-        Text = text;
+        text = text;
     }
 
     public String getChapterTitle() {
@@ -15,6 +15,6 @@ class Chapter {
     }
 
     public String getText() {
-        return this.Text;
+        return this.text;
     }
 }

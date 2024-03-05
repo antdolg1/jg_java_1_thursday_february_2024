@@ -8,14 +8,14 @@ class DoctorTimetableApp {
 
     public static void main(String[] args) {
 
-        DoctorTimetable DoctorTimeTable1 = new DoctorTimetable("James Scott", "Surgeon",
+        DoctorTimetable doctorTimeTable1 = new DoctorTimetable("James Scott", "Surgeon",
                 "4th of March 2024", "10:00", "10:15");
-        Appointment Appointment1 = new Appointment("Mary Green", "Wrist fracture",
+        Appointment appointment1 = new Appointment("Mary Green", "Wrist fracture",
                 20);
 
-        DoctorTimetable DoctorTimeTable2 = new DoctorTimetable("Jeremy White", "Neurologist",
+        DoctorTimetable doctorTimeTable2 = new DoctorTimetable("Jeremy White", "Neurologist",
                 "4th of March 2024", "16:00", "16:30");
-        Appointment Appointment2 = new Appointment("Antony Smile", "Headache", 30);
+        Appointment appointment2 = new Appointment("Antony Smile", "Headache", 30);
 
 
         Scanner scanner = new Scanner(System.in);
@@ -24,20 +24,20 @@ class DoctorTimetableApp {
         nameOfTheDoctor = nameOfTheDoctor.toUpperCase();
 
         if (nameOfTheDoctor.equals("SCOTT")) {
-            System.out.println("Date of appointment - " + DoctorTimeTable1.getDateOfAppointment());
-            System.out.println("Time of appointment - " + DoctorTimeTable1.getTimeOfAppointment1() + "---" +
-                    DoctorTimeTable1.getTimeOfAppointment2());
-            System.out.println("Name of the patient - " + Appointment1.getNameOfThePatient());
-            System.out.println("Diagnose - " + Appointment1.getDiagnose());
-            System.out.println("Price - " + Appointment1.getPrice());
+            System.out.println("Date of appointment - " + doctorTimeTable1.getDateOfAppointment());
+            System.out.println("Time of appointment - " + doctorTimeTable1.getTimeOfAppointment1() + "---" +
+                    doctorTimeTable1.getTimeOfAppointment2());
+            System.out.println("Name of the patient - " + appointment1.getNameOfThePatient());
+            System.out.println("Diagnose - " + appointment1.getDiagnose());
+            System.out.println("Price - " + appointment1.getPrice());
 
         } else if (nameOfTheDoctor.equals("WHITE")) {
-            System.out.println("Date of appointment - " + DoctorTimeTable2.getDateOfAppointment());
-            System.out.println("Time of appointment - " + DoctorTimeTable2.getTimeOfAppointment1() + "---" +
-                    DoctorTimeTable2.getTimeOfAppointment2());
-            System.out.println("Name of the patient - " + Appointment2.getNameOfThePatient());
-            System.out.println("Diagnose - " + Appointment2.getDiagnose());
-            System.out.println("Price - " + Appointment2.getPrice());
+            System.out.println("Date of appointment - " + doctorTimeTable2.getDateOfAppointment());
+            System.out.println("Time of appointment - " + doctorTimeTable2.getTimeOfAppointment1() + "---" +
+                    doctorTimeTable2.getTimeOfAppointment2());
+            System.out.println("Name of the patient - " + appointment2.getNameOfThePatient());
+            System.out.println("Diagnose - " + appointment2.getDiagnose());
+            System.out.println("Price - " + appointment2.getPrice());
         } else {
             System.out.println("Unknown doctor");
         }
