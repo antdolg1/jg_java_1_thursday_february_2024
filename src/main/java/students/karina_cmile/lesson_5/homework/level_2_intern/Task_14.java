@@ -1,13 +1,10 @@
 package students.karina_cmile.lesson_5.homework.level_2_intern;
 
-import teacher.lesson_5.lessoncode.CustomArrayUtils;
-
-import java.sql.SQLOutput;
 import java.util.Random;
 
-public class Task_13 {
+public class Task_14 {
     public static void main(String[] args) {
-               int[] numbers = new int[3];
+        int[] numbers = new int[3];
         Random random = new Random();
 
         for (int i = 0; i < numbers.length; i++) {
@@ -15,7 +12,12 @@ public class Task_13 {
         }
 //        System.out.println(numbers[0]+" "+numbers[1]+" "+numbers[2]);
 
-            int sum = ArraySum.sumOfArrayNumbers(numbers);
-            System.out.println("Сумма всех чисел массива равна " + sum);
-        }
+        double sum = ArraySum.sumOfArrayNumbers(numbers);
+
+//        System.out.println("Сумма всех чисел массива равна " + sum);
+
+        double average = sum / 3;
+        System.out.println("Cреднее значение равно " + average);
+
     }
+}
