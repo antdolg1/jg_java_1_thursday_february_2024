@@ -1,4 +1,4 @@
-package students.karina_cmile.lesson_5.homework.level_1_intern;
+package students.karina_cmile.lesson_5.level_1_intern;
 
 class ArrayDefinition5 {
 

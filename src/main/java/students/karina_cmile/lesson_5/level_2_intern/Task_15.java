@@ -1,4 +1,4 @@
-package students.karina_cmile.lesson_5.homework.level_2_intern;
+package students.karina_cmile.lesson_5.level_2_intern;
 
 import java.sql.SQLOutput;
 import java.util.Random;

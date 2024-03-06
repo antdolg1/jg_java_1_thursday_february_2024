@@ -1,8 +1,5 @@
-package students.karina_cmile.lesson_5.homework.level_2_intern;
+package students.karina_cmile.lesson_5.level_2_intern;
 
-import teacher.lesson_5.lessoncode.CustomArrayUtils;
-
-import java.sql.SQLOutput;
 import java.util.Random;
 
 public class Task_13 {
