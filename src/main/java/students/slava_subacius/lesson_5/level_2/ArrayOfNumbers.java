@@ -1,6 +1,6 @@
 package students.slava_subacius.lesson_5.level_2;
 
-import java.lang.reflect.Array;
+
 
 public class ArrayOfNumbers {
     public static void main(String[] args) {

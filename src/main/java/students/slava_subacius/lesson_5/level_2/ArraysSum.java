@@ -1,7 +1,7 @@
 package students.slava_subacius.lesson_5.level_2;
 
 
-import java.util.Arrays;
+
 import java.util.Random;
 
 public class ArraysSum {

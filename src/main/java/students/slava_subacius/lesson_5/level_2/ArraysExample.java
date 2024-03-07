@@ -1,6 +1,6 @@
 package students.slava_subacius.lesson_5.level_2;
 
-import java.util.Random;
+
 import java.util.Scanner;
 
 public class ArraysExample {

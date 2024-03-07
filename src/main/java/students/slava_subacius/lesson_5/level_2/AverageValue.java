@@ -11,7 +11,7 @@ public class AverageValue {
             array[i] = random.nextInt(50);
 
             int sum = array[0] + array[1] + array[2];
-            double average = sum / 3;
+            double average = (double) sum / array.length;
             System.out.println("Average value: " + average);
 
         }
