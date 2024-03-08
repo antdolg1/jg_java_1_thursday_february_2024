@@ -1,6 +1,6 @@
-package students.aleksandra_hodjuka.lesson_6_level_1;
+package students.aleksandra_hodjuka.level_1;
 
-public class NumberUtils {
+class NumberUtils {
 
     int number;
 

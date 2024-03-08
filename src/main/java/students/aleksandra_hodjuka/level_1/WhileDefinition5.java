@@ -1,6 +1,6 @@
-package students.aleksandra_hodjuka.lesson_6_level_1;
+package students.aleksandra_hodjuka.level_1;
 
-public class WhileDefinition5 {
+class WhileDefinition5 {
     public static void main(String[] args) {
         int i = 1;
         while (i <= 100) {
