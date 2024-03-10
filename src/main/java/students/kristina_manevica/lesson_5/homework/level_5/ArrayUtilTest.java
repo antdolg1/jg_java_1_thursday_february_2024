@@ -11,20 +11,29 @@ class ArrayUtilTest {
         ArrayUtilTest test = new ArrayUtilTest();
         test.shouldCreateArray();
         test.shouldFillArray();
+        test.shouldFindMaxNumber();
     }
 
-    public static void shouldCreateArray() {
+    public void shouldCreateArray() {
 
         int[] numbers = ArrayUtil.createArray(arrayLength);
 
         System.out.println(numbers.length == arrayLength ? "Test passed" : "Error!");
     }
 
-    public static void shouldFillArray() {
+    public void shouldFillArray() {
 
         int[] numbers = ArrayUtil.createArray(arrayLength);
 
         ArrayUtil.fillArrayWithRandomNumbers(numbers);
-        System.out.println("Array: " + Arrays.toString(numbers));
+        System.out.println("Array elements: " + Arrays.toString(numbers));
+    }
+
+    public void shouldFindMaxNumber() {
+        int[] numbers = ArrayUtil.createArray(arrayLength);
+
+        ArrayUtil.fillArrayWithRandomNumbers(numbers);
+        int maxNumber = ArrayUtil.findMaxNumber(numbers);
+        System.out.println("Max number is: " + maxNumber);
     }
 }
