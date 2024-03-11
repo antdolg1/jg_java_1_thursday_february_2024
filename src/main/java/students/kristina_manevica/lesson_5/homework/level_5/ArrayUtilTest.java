@@ -40,6 +40,11 @@ class ArrayUtilTest {
     }
 
     public void shouldFindMinNumber() {
-        // Напишите реализацию !!!
+        int[] numbers = ArrayUtil.createArray(arrayLength);
+
+        ArrayUtil.fillArrayWithRandomNumbers(numbers);
+        System.out.println("Array elements for Min Number test: " + Arrays.toString(numbers));
+        int minNumber = ArrayUtil.findMinNumber(numbers);
+        System.out.println("Min number in Array: " + minNumber);
     }
 }
