@@ -9,7 +9,6 @@ public class Task25 {
         ArrayUtil.printArrayToConsole(array);
     }
 }
-
 /*      //previous version
         for (int i = 0; i < arrays.length; i++) {
             System.out.println("Enter element value with index: " + i);
