@@ -5,7 +5,17 @@ import java.util.Arrays;
 class Task30 {
     public static void main(String[] args) {
 
+        int arrayLength = ArrayUtil.createArrayRandomLength();
+        int[] array = ArrayUtil.createArray(arrayLength);
+        ArrayUtil.fillArrayWithRandomNumbers(array);
+        ArrayUtil.printArrayToConsole(array);
+        ArrayUtil.printOddNumbersOfArray(array);
+    }
+}
+
+       /*  //previous solution
         int[] arrays = new int[(int) (Math.random() * 10)];
+
 
         for (int i = 0; i < arrays.length; i++) {
             arrays[i] = (int) (Math.random() * 100);
@@ -18,5 +28,4 @@ class Task30 {
                 System.out.println("Odd elements: " + arrays[j]);
             }
         }
-    }
-}
+    }*/

@@ -1,11 +1,18 @@
 package students.kristina_manevica.lesson_5.homework.level_4;
 
-import java.util.Arrays;
-import java.util.Scanner;
 
 class Task28 {
     public static void main(String[] args) {
 
+        int arrayLength = ArrayUtil.createArrayRandomLength();
+        int[] array = ArrayUtil.createArray(arrayLength);
+        ArrayUtil.fillArrayWithRandomNumbers(array);
+        ArrayUtil.printArrayToConsole(array);
+        ArrayUtil.findMinNumber(array);
+    }
+}
+
+        /*
         int[] arrays = new int[(int) (Math.random() * 10)];
 
         for (int i = 0; i < arrays.length; i++) {
@@ -21,5 +28,4 @@ class Task28 {
             }
         }
         System.out.println("Min number in array: " + minNumber);
-    }
-}
+    }*/

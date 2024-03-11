@@ -5,9 +5,15 @@ import java.util.Arrays;
 class Task27 {
     public static void main(String[] args) {
 
-        int[] arrays = new int[(int) (Math.random() * 10)];
+        int arrayLength = ArrayUtil.createArrayRandomLength();
+        int[] array = ArrayUtil.createArray(arrayLength);
+        ArrayUtil.fillArrayWithRandomNumbers(array);
+        ArrayUtil.printArrayToConsole(array);
+        ArrayUtil.findMaxNumber(array);
+    }
+}
 
-        System.out.println("Array length: " + arrays.length);
+        /* //previous solution
 
         for (int i = 0; i < arrays.length; i++) {
             arrays[i] = (int) (Math.random() * 100);
@@ -19,7 +25,4 @@ class Task27 {
             if (maxNumber < arrays[j]) {
                 maxNumber = arrays[j];
             }
-        }
-        System.out.println("Max element from array is: " + maxNumber);
-    }
-}
+        }*/

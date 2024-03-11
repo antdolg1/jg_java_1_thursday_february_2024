@@ -1,4 +1,4 @@
-package students.kristina_manevica.lesson_5.homework.level_5;
+package students.kristina_manevica.lesson_5.homework.level_4;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -9,6 +9,11 @@ public class ArrayUtil {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter array length: ");
         return scanner.nextInt();
+    }
+
+    public static int createArrayRandomLength() {
+        int arrayLength = (int) (Math.random() * 10);
+        return arrayLength;
     }
 
     public static int[] createArray(int arrayLength) {
@@ -50,6 +55,7 @@ public class ArrayUtil {
                 maxNumber = array[i];
             }
         }
+        System.out.println("Max number: " + maxNumber);
         return maxNumber;
     }
 
@@ -60,6 +66,7 @@ public class ArrayUtil {
                 minNumber = array[i];
             }
         }
+        System.out.println("Min number: " + minNumber);
         return minNumber;
     }
 
