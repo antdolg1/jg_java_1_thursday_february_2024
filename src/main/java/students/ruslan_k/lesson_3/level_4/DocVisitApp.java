@@ -99,9 +99,9 @@ class DocVisitApp {
                                 //    System.out.println("Вы будете записаны в начальную школу дла изучения понятий AM/PM");
 //--------------------------------------
                                 System.out.println("Заполните свои данные:");
-                                System.out.print("First IfStatement: ");
+                                System.out.print("First Name: ");
                                 visit[visitCount].client.setClientFirstName(scan.nextLine());
-                                System.out.print("Second IfStatement: ");
+                                System.out.print("Second Name: ");
                                 visit[visitCount].client.setClientSecName(scan.nextLine());
                                 System.out.print("Diagnose: ");
                                 visit[visitCount].client.setDiagnose(scan.nextLine());

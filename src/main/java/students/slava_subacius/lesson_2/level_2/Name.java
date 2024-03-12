@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Name {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please input your IfStatement: ");
+        System.out.println("Please input your Name: ");
         String userName = scanner.nextLine();
         System.out.println("Hello " + userName);
     }
