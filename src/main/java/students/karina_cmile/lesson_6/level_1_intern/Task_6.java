@@ -1,13 +1,12 @@
 package students.karina_cmile.lesson_6.level_1_intern;
 
-class NumberUtils {
+import java.util.Scanner;
 
-    public boolean isEven(int number) {
-        if (number % 2 == 0) {
-            return true;
-        } else {
-            return false;
+class NumberUtils {
+    public static void main(String[] args) {
+        System.out.println("Enter number: ");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+
         }
     }
-
-}
