@@ -3,6 +3,10 @@ package students.aleksandra_hodjuka.level_3;
 class ArrayService {
     int number;
     int numberToSearch;
+    int numberToReplace;
+    int newNumber;
+
+
 
     public static boolean contains(int[] array, int numberToSearch) {
         for (int number : array) {
@@ -25,11 +29,10 @@ class ArrayService {
 
     }
 
+
     public static void main(String[] args) {
         int[] array = {1, 1, 3, 3, 5};
         int number = 1;
-
-
         boolean result = contains(array, number);
         int occurrences = countOccurrences(array, number);
         System.out.println("Количество повторений числа " + number + ": " + occurrences + "раза!");
@@ -40,6 +43,8 @@ class ArrayService {
         }
     }
 }
+
+
 
 
 
