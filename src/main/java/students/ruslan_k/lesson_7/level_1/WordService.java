@@ -36,12 +36,12 @@ class WordService {
     int findMaxEntrance(int[] quantity) {
         int max = quantity[0];
         for (int quantityElement : quantity) {
-            if (max < quantityElement) {
-                max = quantityElement;
-            }
+            max = Math.max(quantityElement,max);
         }
         return max;
     }
+
+
 
     int findFirstMaxIndex(int[] quantity, int max) {
         int index = 0;
