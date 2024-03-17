@@ -16,7 +16,7 @@ public class Task_14 {
 
 //        System.out.println("Сумма всех чисел массива равна " + sum);
 
-        double average = sum / 3;
+        double average = sum / numbers.length;
         System.out.println("Cреднее значение равно " + average);
 
     }

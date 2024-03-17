@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Task_12 {
     public static void main(String[] args) {
-        int number2;
-        int number3;
         int[] numbers = new int[3];
         Scanner scanner = new Scanner(System.in);
 
