@@ -7,7 +7,7 @@ class NumberUtils {
     }
 }
 
-class isEvenTest {
+class IsEvenTest {
     public static void main(String[] args) {
         int testValue1 = 12;
         int testValue2 = 15;
