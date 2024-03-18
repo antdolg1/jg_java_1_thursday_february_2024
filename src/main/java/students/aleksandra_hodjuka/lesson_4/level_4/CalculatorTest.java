@@ -6,10 +6,8 @@ public class CalculatorTest {
         CalculatorTest calculatorTest = new CalculatorTest();
         calculatorTest.sub1Test();
         calculatorTest.sumTest();
-        calculatorTest.sub2Test();
         calculatorTest.mulTest();
         calculatorTest.div1Test();
-        calculatorTest.div2Test();
         calculatorTest.firstNumberIsBigger();
         calculatorTest.secondNumberIsBigger();
         calculatorTest.numbersAreEqual();
@@ -25,7 +23,7 @@ public class CalculatorTest {
         int secondNumber = 30;
         int thirdNumber = 30;// подготавливаем тестовые данные
         Calculator calculator = new Calculator();
-        int realResult = calculator.threeEqualNumbers(firstNumber, secondNumber,thirdNumber);
+        int realResult = calculator.threeEqualNumbers(firstNumber, secondNumber, thirdNumber);
         if (realResult == firstNumber) {  // проверяем правильно ли сработал тестируемый код
             System.out.println("Все три  числа равны = OK");
         } else {
@@ -63,19 +61,18 @@ public class CalculatorTest {
     }
 
     private void firstOfThreeNumberIsBigger() {
-            int firstNumber = 50;  // подготавливаем тестовые данные
-            int secondNumber = 30;  // подготавливаем тестовые данные
-            int thirdNumber = 20;
+        int firstNumber = 50;  // подготавливаем тестовые данные
+        int secondNumber = 30;  // подготавливаем тестовые данные
+        int thirdNumber = 20;
         Calculator calculator = new Calculator();
-            int realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-            if (realResult == firstNumber) {  // проверяем правильно ли сработал тестируемый код
-                System.out.println("Первое число больше = OK");
-            } else {
+        int realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (realResult == firstNumber) {  // проверяем правильно ли сработал тестируемый код
+            System.out.println("Первое число больше = OK");
+        } else {
 
-                System.out.println("Первое число больше = FAIL");
-            }
+            System.out.println("Первое число больше = FAIL");
+        }
     }
-
 
 
     private void numbersAreEqual() {
@@ -117,24 +114,6 @@ public class CalculatorTest {
         }
     }
 
-    private void div2Test() {
-        int firstNumber = 10;  // подготавливаем тестовые данные
-        int secondNumber = 20;  // подготавливаем тестовые данные
-        int expectedResult = 2;  // подготавливаем тестовые данные
-        Calculator calculator = new Calculator();
-        int realResult = calculator.div2(secondNumber, firstNumber);  // вызываем продакшен код, который хотим протестировать
-        if (realResult == expectedResult) {  // проверяем правильно ли сработал тестируемый код
-            System.out.println("Div2 test = OK");
-        } else {
-
-            System.out.println("Div2 test = FAIL");
-        }
-        if (realResult % 2 == 0) {
-            System.out.println("Результат Div2 test четное число");
-        } else {
-            System.out.println("Результат Div2 test нечетное число");
-        }
-    }
 
     private void div1Test() {
 
@@ -171,25 +150,6 @@ public class CalculatorTest {
             System.out.println("Результат MUL test четное число");
         } else {
             System.out.println("Результат MUL test нечетное число");
-        }
-    }
-
-    private void sub2Test() {
-        int firstNumber = 10;  // подготавливаем тестовые данные
-        int secondNumber = 5;  // подготавливаем тестовые данные
-        int expectedResult = -5;  // подготавливаем тестовые данные
-        Calculator calculator = new Calculator();
-        int realResult = calculator.sub2(secondNumber, firstNumber);  // вызываем продакшен код, который хотим протестировать
-        if (realResult == expectedResult) {  // проверяем правильно ли сработал тестируемый код
-            System.out.println("Sub2 test = OK");
-        } else {
-
-            System.out.println("Sub2 test = FAIL");
-        }
-        if (realResult % 2 == 0) {
-            System.out.println("Результат Sub2 test четное число");
-        } else {
-            System.out.println("Результат Sub2 test нечетное число");
         }
     }
 

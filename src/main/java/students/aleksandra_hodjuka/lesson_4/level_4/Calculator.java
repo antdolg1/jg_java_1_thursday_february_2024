@@ -15,11 +15,6 @@ class Calculator {
     public int sub1(int firstNumber, int secondNumber) {
         return firstNumber - secondNumber;
     }
-
-    public int sub2(int secondNumber, int firstNumber) {
-        return secondNumber - firstNumber;
-    }
-
     public int mul(int firstNumber, int secondNumber) {
         return firstNumber * secondNumber;
     }
@@ -27,11 +22,6 @@ class Calculator {
     public int div1(int firstNumber, int secondNumber) {
         return firstNumber / secondNumber;
     }
-
-    public int div2(int secondNumber, int firstNumber) {
-        return secondNumber / firstNumber;
-    }
-
     public boolean isEven(int realResult) {
         return realResult % 2 == 0;
     }
@@ -45,21 +35,27 @@ class Calculator {
     public int equalNumbers(int firstNumber, int secondNumber) {
         if (firstNumber == secondNumber) {
             return firstNumber;
-        } else return secondNumber;
-    }
-    public int maxOfThreeNumbers(int firstNumber, int secondNumber,int thirdNumber) {
-        if (firstNumber > secondNumber) {
-            return firstNumber;
-        } else if (firstNumber > thirdNumber)
-            return firstNumber;
-        else if (secondNumber > thirdNumber)
+        } else {
             return secondNumber;
-        else return thirdNumber;}
+        }
+    }
+
+    public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
+        if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+            return firstNumber;
+        } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+            return secondNumber;
+        } else {
+            return thirdNumber;
+        }
+    }
 
     public int threeEqualNumbers(int firstNumber, int secondNumber, int thirdNumber) {
-        if (firstNumber == (secondNumber = thirdNumber)) {
+        if (firstNumber == secondNumber && secondNumber == thirdNumber) {
             return firstNumber;
-        } else return secondNumber;
+        } else {
+            return secondNumber;
+        }
     }
 }
 

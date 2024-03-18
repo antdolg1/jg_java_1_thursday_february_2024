@@ -2,7 +2,7 @@ package students.aleksandra_hodjuka.lesson_4.level_2;
 
 import java.util.Scanner;
 
- class Task5 {
+class Task5 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -16,8 +16,9 @@ import java.util.Scanner;
         } else if (A < B) {
             System.out.println(B);
 
-        } else
+        } else {
             System.out.println("Неверное число!!!");
+        }
 
 
     }

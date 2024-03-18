@@ -2,7 +2,7 @@ package students.aleksandra_hodjuka.lesson_4.level_3;
 
 import java.util.Scanner;
 
- class Task8 {
+class Task8 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -15,8 +15,7 @@ import java.util.Scanner;
 
         if (A == B && A == C) {
             System.out.println("All numbers are equal");
-        } else if (A != B && A != C) System.out.println("All numbers are different");
-        else if (A != B && B != C) {
+        } else if (A != B && A != C && B != C) {
             System.out.println("All numbers are different");
         } else {
             System.out.println("Neither all are equal or different");
