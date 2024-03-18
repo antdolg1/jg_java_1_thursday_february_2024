@@ -4,10 +4,10 @@ class Book {
     String title;
     String author;
     String yearOfPrint;
-    String chapter;
+    Chapter chapter;
 
 
-    Book(String title, String author, String yearOfPrint,String chapter) {
+    Book(String title, String author, String yearOfPrint, Chapter chapter) {
         this.title = title;
         this.author = author;
         this.yearOfPrint = yearOfPrint;
@@ -17,8 +17,10 @@ class Book {
     public String getTitle() {
         return this.title;
     }
-    public String getChapter() {
-        return this.chapter;}
+
+    public Chapter getChapter() {
+        return this.chapter;
+    }
 
     public String getAuthor() {
         return this.author;
@@ -26,6 +28,5 @@ class Book {
 
     public String getYearOfPrint() {
         return this.yearOfPrint;
-
     }
 }

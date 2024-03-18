@@ -7,7 +7,7 @@ class Chapter {
 
     public Chapter(String chapterTitle, String text) {
         this.chapterTitle = chapterTitle;
-        text = text;
+        this.text = text;
     }
 
     public String getChapterTitle() {
