@@ -5,6 +5,7 @@ import java.util.Arrays;
 class ArrayUtilTest {
 
     private static int arrayLength = 5;
+    private static int[] testArray = {3, 5, 7, 9, 0};
 
     public static void main(String[] args) {
 
@@ -31,20 +32,18 @@ class ArrayUtilTest {
     }
 
     public void shouldFindMaxNumber() {
-        int[] numbers = ArrayUtil.createArray(arrayLength);
 
-        ArrayUtil.fillArrayWithRandomNumbers(numbers);
-        System.out.println("Array elements for Max Number test: " + Arrays.toString(numbers));
-        int maxNumber = ArrayUtil.findMaxNumber(numbers);
-        System.out.println("Max number is: " + maxNumber);
+        int expectedResult = 9;
+        int actualResult = ArrayUtil.findMaxNumber(testArray);
+        System.out.println((expectedResult == actualResult) ? "Test passed, max number is: " + actualResult :
+                "Error in max test!");
     }
 
     public void shouldFindMinNumber() {
-        int[] numbers = ArrayUtil.createArray(arrayLength);
 
-        ArrayUtil.fillArrayWithRandomNumbers(numbers);
-        System.out.println("Array elements for Min Number test: " + Arrays.toString(numbers));
-        int minNumber = ArrayUtil.findMinNumber(numbers);
-        System.out.println("Min number in Array: " + minNumber);
+        int expectedResult = 0;
+        int actualResult = ArrayUtil.findMinNumber(testArray);
+        System.out.println((expectedResult == actualResult) ? "Test passed, min number is " + actualResult :
+                "Error in min test!");
     }
 }
