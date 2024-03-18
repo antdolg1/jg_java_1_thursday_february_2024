@@ -1,7 +1,7 @@
 package students.ruslan_k.lesson_3.level_1;
 
 class Robot {
-    String robotName;
+    String robotName; //roboname
 
     Robot(String robotName){
         this.robotName=robotName;
