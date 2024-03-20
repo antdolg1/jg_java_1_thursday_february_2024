@@ -1,33 +1,33 @@
 package students.karina_cmile.lesson_7.level_1_intern;
 
-import java.util.Scanner;
+import java.util.*;
 
 class WordService {
-
     public static void main(String[] args) {
 
-        System.out.println("Create sentence: ");
-        Scanner scanner = new Scanner(System.in);
-        String sentence = scanner.next();
+        String sentence = "Word1, Word1, Word2, Word1, Word3, Word3, Word3, Word3, Word3, Word1, Word1, Word1";
+        String[] words = sentence.split("[, ?.@]+"); // Splitting text into words and making an array.
 
-        String[] words = sentence.split("[, ?.@]+");
-        for (String word : words)
-            System.out.println(word);
-
-/*
-        int size = words.length;
-        for (int i = 0; i < size; i += 1) {
-            int count = 0;
-
-            String element = words[i];
-            for (int j = 0; j < size; j += 1) {
-                if (words[j].equals(element)) {
-                    count += 1;
-                }
+        Arrays.sort(words);
+        System.out.println(Arrays.toString(words)); // Output the array.
+        int max = 0; // Finding the frequency of words
+        int count= 1;
+        String word = words[0];
+        String curr = words[0];
+        for(int i = 1; i<words.length; i++){
+            if(words[i].equals(curr)){
+                count++; // Compare first word to the next, if equals ++ and finding max
             }
-            System.out.println(words[i] + " " + count);
+            else{
+                count =1;
+                curr = words[i];
+            }
+            if(max<count){
+                max = count;
+                word = words[i];
+            }
         }
+        System.out.println("The most frequent word in the sentence is "+ word+ " and it is repeated "+max + " times.");
+    }
+}
 
- */
-    }
-    }
