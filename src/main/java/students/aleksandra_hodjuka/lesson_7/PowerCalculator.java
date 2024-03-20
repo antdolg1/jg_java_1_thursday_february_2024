@@ -22,7 +22,7 @@ class PowerCalculator {
             for (int i = 0; i < thePowerToRaise; i++) {
                 poweredNumber *= numberToIncrease;
             }
-            System.out.println("Результат возведения в степень :" + poweredNumber);
+            System.out.println(STR."Результат возведения в степень :\{poweredNumber}");
 
 
         }
