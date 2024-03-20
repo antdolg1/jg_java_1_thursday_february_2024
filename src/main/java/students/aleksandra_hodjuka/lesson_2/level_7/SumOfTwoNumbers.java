@@ -12,7 +12,7 @@ public class SumOfTwoNumbers {
 
         int SUM = numberOne + numberTwo;
 
-        System.out.println(STR."Sum = \{SUM}");
+        System.out.println("Sum = "+SUM);
 
 
 
