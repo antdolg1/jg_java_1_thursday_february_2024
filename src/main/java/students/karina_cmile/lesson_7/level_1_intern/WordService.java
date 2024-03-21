@@ -34,7 +34,7 @@ public class WordService {
     }
 
     public static void main(String[] args) {
-        String wordArr = WordService.splitTheSentence();
+        WordService.splitTheSentence();
         // WordService.findTheMostFrequentWord();
 
     }
