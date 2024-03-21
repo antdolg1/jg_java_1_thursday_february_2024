@@ -95,8 +95,8 @@ class DocVisitApp {
                                         System.out.println("Сорян, запись только на " + visitSelect);
                                     }
                                 }
-                                //else
-                                  //  System.out.println("Ну не тупи... AM/PM! Братан соберись");
+                                else
+                                    System.out.println("Ну не тупи... AM/PM! Братан соберись");
 
                                 System.out.println("Заполните свои данные:");
                                 System.out.print("First Name: ");
