@@ -19,7 +19,7 @@ class Trader {
 
     public static void main(String[] args) {
         Trader trader = new Trader("Pokemon", "Riga");
-        Trader trader1 = new Trader("Alien","Riga");
+        Trader trader1 = new Trader("Alien", "Riga");
 
     }
 }

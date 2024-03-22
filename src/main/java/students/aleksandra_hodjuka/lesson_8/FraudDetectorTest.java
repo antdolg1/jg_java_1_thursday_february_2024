@@ -8,8 +8,6 @@ class FraudDetectorTest {
         testIsBigSumFraudNegative();
         testIsFraudCityPositive();
         testIsFraudCityNegative();
-
-
     }
 
     private static void testIsFraudCityNegative() {
@@ -34,8 +32,6 @@ class FraudDetectorTest {
         } else {
             System.out.println("Positive Test: Failed. Transaction is allowed.");
         }
-
-
     }
 
     private static void testIsBigSumFraudNegative() {
@@ -48,7 +44,6 @@ class FraudDetectorTest {
         } else {
             System.out.println("Negative Test for isBigSumFraud: Failed. Transaction is not allowed.");
         }
-
     }
 
     private static void testIsBigSumFraudPositive() {
