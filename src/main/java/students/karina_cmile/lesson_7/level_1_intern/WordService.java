@@ -4,43 +4,39 @@ import java.util.*;
 
 public class WordService {
 
-    public static String splitTheSentence() {
-        String sentence = "Word1, Word1, Word2, Word1";
+    public static String[] splitTheSentence() {
+        String sentence = "Word1, Word1, Word2, Word1, Word3";
         String[] words = sentence.split("[, ?.@]+");
-        Arrays.sort(words);
+        Arrays.sort(words); // сортирует слова
         System.out.println(Arrays.toString(words));
-        return sentence;
+        return words;
     }
 
-    public static String findTheMostFrequentWord(String[] words) {
+    public static void findTheMostFrequentWord() {
+        String[] words1 = WordService.splitTheSentence();
         int max = 0;
         int count = 1;
-        String word = words[0];
-        String curr = words[0];
-        for (int i = 1; i < words.length; i++) {
-            if (words[i].equals(curr)) {
+        String word = words1[0];
+        String curr = words1[0];
+        for (int i = 1; i < words1.length; i++) {
+            if (words1[i].equals(curr)) {
                 count++;
             } else {
                 count = 1;
-                curr = words[i];
+                curr = words1[i];
             }
             if (max < count) {
                 max = count;
-                word = words[i];
+                word = words1[i];
             }
         }
-        System.out.println("The most frequent word in the sentence is "+ word+ " and it is repeated "+max + " times.");
-        return word;
+        System.out.println("The most frequent word in the sentence is " + word + " and it is repeated " + max + " times.");
     }
-
     public static void main(String[] args) {
         WordService.splitTheSentence();
-        // WordService.findTheMostFrequentWord();
-
+        WordService.findTheMostFrequentWord();
     }
-
 }
-
 
 /*
         String sentence = "Word1, Word1, Word2, Word1, Word3, Word3, Word3, Word3, Word3, Word1, Word1, Word1";
