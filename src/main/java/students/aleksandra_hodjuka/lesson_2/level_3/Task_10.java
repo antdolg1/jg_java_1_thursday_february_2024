@@ -2,7 +2,7 @@ package students.aleksandra_hodjuka.lesson_2.level_3;
 
 import java.util.Scanner;
 
-public class Task_10 {
+ class Task_10 {
     public static void main(String[] args) {
         double p = 3.14;
 
