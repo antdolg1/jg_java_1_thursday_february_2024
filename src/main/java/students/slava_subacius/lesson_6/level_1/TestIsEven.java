@@ -23,4 +23,6 @@ public class TestIsEven {
         NumberUtils numberUtils = new NumberUtils();
          System.out.println("Is -3 even? " + numberUtils.isEven(-3));
      }
+
 }
+
