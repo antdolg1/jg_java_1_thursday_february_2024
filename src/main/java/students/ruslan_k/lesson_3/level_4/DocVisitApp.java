@@ -13,7 +13,7 @@ class DocVisitApp {
 
         int[][] visitCheck = {{1, 1}, {1, 1}, {1, 1}, {1, 1}, {1, 1}};
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in); //
 
         DocVisit[] visit = new DocVisit[10];
         String toBeCont;
