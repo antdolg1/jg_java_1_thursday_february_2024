@@ -1,16 +1,14 @@
 package students.aleksandra_hodjuka.lesson_3.level_2;
 
- class Car {
+class Car {
     String model;
     String color;
     Double price;
 
-
-     Car(String model, String color, Double price) {
+    Car(String model, String color, Double price) {
         this.model = model;
         this.color = color;
         this.price = price;
-
     }
 
     public String getModel() {
@@ -36,5 +34,4 @@ package students.aleksandra_hodjuka.lesson_3.level_2;
     public void setPrice(Double price) {
         this.price = price;
     }
-
 }

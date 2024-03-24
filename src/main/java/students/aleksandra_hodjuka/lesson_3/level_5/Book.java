@@ -1,8 +1,6 @@
 package students.aleksandra_hodjuka.lesson_3.level_5;
 
- class Book {
-
-
+class Book {
     private String title;
 
     Book(String title) {
@@ -12,7 +10,6 @@ package students.aleksandra_hodjuka.lesson_3.level_5;
     String getTitle() {
         return this.title;
     }
-
 }
 
 class BookDemo {
@@ -22,8 +19,4 @@ class BookDemo {
         String title = myBook.getTitle();
         System.out.println("Book title = " + title);
     }
-
 }
-
-
-

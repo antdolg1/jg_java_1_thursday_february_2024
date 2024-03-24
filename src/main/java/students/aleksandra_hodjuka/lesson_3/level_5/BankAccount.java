@@ -1,6 +1,6 @@
 package students.aleksandra_hodjuka.lesson_3.level_5;
 
- class BankAccount {
+class BankAccount {
 
     private String ownerFirstName;
     private String ownerLastName;
@@ -23,7 +23,6 @@ package students.aleksandra_hodjuka.lesson_3.level_5;
     int getMoneyAmount() {
         return this.moneyAmount;
     }
-
 }
 
 class BankAccountDemo {
@@ -37,6 +36,4 @@ class BankAccountDemo {
         System.out.println("Owner last name = " + ownerLastName);
         System.out.println("Money amount = " + moneyAmount);
     }
-
-
 }
