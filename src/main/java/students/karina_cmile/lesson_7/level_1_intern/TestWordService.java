@@ -3,7 +3,7 @@ package students.karina_cmile.lesson_7.level_1_intern;
 import java.util.Arrays;
 public class TestWordService {
 
-    // Test with the simple text
+    // Test 1 with the simple text
     public static String[] splitTheSentenceOne() {
         String sentence = "1, 2, 2, 2";
         System.out.println("Text is: " +sentence);
@@ -33,7 +33,7 @@ public class TestWordService {
         return words1;
     }
 
-    // Test with the same the most frequent word number
+    // Test 2 with the same the most frequent word number
     public static String[] splitTheSentenceTwo() {
         String sentence = "1, 2, 2, 2, 1, 1";
         System.out.println("Text is: " +sentence);
@@ -63,7 +63,7 @@ public class TestWordService {
         return words1;
     }
 
-    // Test with no repeated words
+    // Test 3 with no repeated words
     public static String[] splitTheSentenceThree() {
         String sentence = "1, 2, 3, 4, 5";
         System.out.println("Text is: " +sentence);
@@ -93,7 +93,7 @@ public class TestWordService {
         return words1;
     }
 
-    // Test with the void text
+    // Test 4 with the void text
     public static String[] splitTheSentenceFour() {
         String sentence = " ";
         System.out.println("Text is: " +sentence);
@@ -123,7 +123,7 @@ public class TestWordService {
         return words1;
     }
 
-    // Test with only one word
+    // Test 5 with only one word
     public static String[] splitTheSentenceFive() {
         String sentence = "1";
         System.out.println("Text is: " +sentence);
