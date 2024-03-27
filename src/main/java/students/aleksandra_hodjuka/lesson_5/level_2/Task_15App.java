@@ -15,7 +15,6 @@ public class Task_15App {
             if (numbers[i] >= 0) numbers[i] += 2;
         }
 
-
         System.out.println("Увеличение значения элементов массива на 2");
 
         for (int i = 0; i < numbers.length; i++) {

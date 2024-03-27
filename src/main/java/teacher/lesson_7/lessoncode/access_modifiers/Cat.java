@@ -1,5 +1,7 @@
 package teacher.lesson_7.lessoncode.access_modifiers;
 
+import java.util.Objects;
+
 public class Cat {
 
     private int age;
@@ -33,5 +35,18 @@ public class Cat {
 
     public void setNickname(String nickname) {
         this.nickname = nickname;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return age == cat.age && Objects.equals(nickname, cat.nickname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(age, nickname);
     }
 }

@@ -1,7 +1,6 @@
 package students.aleksandra_hodjuka.lesson_3.level_5;
 
- class Phone {
-
+class Phone {
     private String model;
 
     Phone(String model) {
@@ -11,7 +10,6 @@ package students.aleksandra_hodjuka.lesson_3.level_5;
     String getModel() {
         return this.model;
     }
-
 }
 
 class PhoneDemo {
@@ -21,6 +19,4 @@ class PhoneDemo {
         String phoneModel = myPhone.getModel();
         System.out.println("Phone model = " + phoneModel);
     }
-
-
 }
