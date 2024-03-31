@@ -6,6 +6,8 @@ class WordService {
     String findMostFrequentWord(String text) {
         String newText = removeNonTextSymbols(text);
         String[] splitText = splittingString(newText);
+        String[] splitTextForFutureUse = splittingString(newText);
+
         int[] quantity = new int[splitText.length];
 
         findEntrance(splitText, quantity);
