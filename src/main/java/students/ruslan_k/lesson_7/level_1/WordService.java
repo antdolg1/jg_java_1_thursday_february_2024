@@ -4,9 +4,10 @@ class WordService {
 
 
     String findMostFrequentWord(String text) {
-
-        String[] splitText = splittingString(text);
+        String newText = removeNonTextSymbols(text);
+        String[] splitText = splittingString(newText);
         int[] quantity = new int[splitText.length];
+
         findEntrance(splitText, quantity);
         int max = findMaxEntrance(quantity);
         int index = findFirstMaxIndex(quantity, max);
@@ -19,13 +20,21 @@ class WordService {
 
     }
 
+    String removeNonTextSymbols(String text) {
+        text = text.replace(',', ' ');
+        text = text.replace('\n', ' ');
+        return text.replace('.', ' ');
+
+
+    }
+
     void findEntrance(String[] splittedString, int[] quantity) {
         for (int i = 0; i < splittedString.length; i++) {
             if (splittedString[i].isEmpty()) {
                 continue;
             }
             for (int j = i + 1; j < splittedString.length; j++) {
-                if (splittedString[i].equals(splittedString[j])) {
+                if (splittedString[i].equalsIgnoreCase(splittedString[j])) {
                     quantity[i]++;
                     splittedString[j] = "";
                 }
@@ -36,11 +45,10 @@ class WordService {
     int findMaxEntrance(int[] quantity) {
         int max = quantity[0];
         for (int quantityElement : quantity) {
-            max = Math.max(quantityElement,max);
+            max = Math.max(quantityElement, max);
         }
         return max;
     }
-
 
 
     int findFirstMaxIndex(int[] quantity, int max) {
