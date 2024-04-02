@@ -35,6 +35,6 @@ String text;
         WordService wordService = new WordService();
         String text = "Orange, apple, lemon, grapes, apple.";
         String mostFrequentWord = wordService.findMostFrequentWord(text);
-        System.out.println(STR."Most frequent word: \{mostFrequentWord}");
+        System.out.println("Most frequent word" + mostFrequentWord);
     }
 }
