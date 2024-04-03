@@ -6,7 +6,7 @@ public class TestWordService {
     // Test 1 with the simple text
     public static String[] splitTheSentenceOne() {
         String sentence = "1, 2, 2, 2";
-        System.out.println("Text is: " +sentence);
+        System.out.println("Text for simple test is: " +sentence);
         String[] words = sentence.split("[, ?.@]+");
         Arrays.sort(words);
         return words;
@@ -36,7 +36,7 @@ public class TestWordService {
     // Test 2 with the same the most frequent word number
     public static String[] splitTheSentenceTwo() {
         String sentence = "1, 2, 2, 2, 1, 1";
-        System.out.println("Text is: " +sentence);
+        System.out.println("Text with the same the most frequent number is: " +sentence);
         String[] words = sentence.split("[, ?.@]+");
         Arrays.sort(words);
         return words;
@@ -66,7 +66,7 @@ public class TestWordService {
     // Test 3 with no repeated words
     public static String[] splitTheSentenceThree() {
         String sentence = "1, 2, 3, 4, 5";
-        System.out.println("Text is: " +sentence);
+        System.out.println("Text no repeated words is: " +sentence);
         String[] words = sentence.split("[, ?.@]+");
         Arrays.sort(words);
         return words;
@@ -96,7 +96,7 @@ public class TestWordService {
     // Test 4 with the void text
     public static String[] splitTheSentenceFour() {
         String sentence = " ";
-        System.out.println("Text is: " +sentence);
+        System.out.println("Text with the void text is: " +sentence);
         String[] words = sentence.split("[, ?.@]+");
         Arrays.sort(words);
         return words;
@@ -118,6 +118,7 @@ public class TestWordService {
                 max = count;
                 word = words1[i];
             }
+
         }
         System.out.println("The most frequent word in the sentence is '" + word + "' and it is repeated " + max + " times.");
         return words1;
@@ -126,7 +127,7 @@ public class TestWordService {
     // Test 5 with only one word
     public static String[] splitTheSentenceFive() {
         String sentence = "1";
-        System.out.println("Text is: " +sentence);
+        System.out.println("Text with only one word is: " +sentence);
         String[] words = sentence.split("[, ?.@]+");
         Arrays.sort(words);
         return words;
@@ -164,8 +165,8 @@ public class TestWordService {
         TestWordService.splitTheSentenceThree();
         TestWordService.findTheMostFrequentWordThree();
 
-//        TestWordService.splitTheSentenceFour();
-//        TestWordService.findTheMostFrequentWordFour();
+       // TestWordService.splitTheSentenceFour();
+       // TestWordService.findTheMostFrequentWordFour();
 
         TestWordService.splitTheSentenceFive();
         TestWordService.findTheMostFrequentWordFive();

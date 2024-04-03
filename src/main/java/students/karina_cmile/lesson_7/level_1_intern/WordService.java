@@ -5,10 +5,11 @@ import java.util.*;
 public class WordService {
 
     public static String[] splitTheSentence() {
-        String sentence = "Please enter some text with repeated words and text.";
-        System.out.println("Text is: " +sentence);
+        String sentence = "Please enter some text with repeated words and text and text text.";
+        System.out.println(sentence);
         String[] words = sentence.split("[, ?.@]+");
         Arrays.sort(words);
+        System.out.println(Arrays.toString(words));
         return words;
     }
 
@@ -29,12 +30,15 @@ public class WordService {
                 max = count;
                 word = words1[i];
             }
+            if (words1[i].equals(" ")){
+                System.out.println("Please enter text");
+            }
         }
         System.out.println("The most frequent word in the sentence is '" + word + "' and it is repeated " + max + " times.");
         return words1;
     }
     public static void main(String[] args) {
-        WordService.splitTheSentence();
+        //WordService.splitTheSentence();
         WordService.findTheMostFrequentWord();
     }
 }
