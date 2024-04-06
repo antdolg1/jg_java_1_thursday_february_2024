@@ -4,15 +4,14 @@ import java.util.Arrays;
 
 public class ArrayServiceTest {
 
-    private static final int numberToSearch = 6;
-    public static final int newNumber = 123;
-    private static final int[] arrayOne = {0, 7, 2345, 6, 654, -4, 6};
-    private static final int[] arrayOneBeforeChange = {0, 7, 2345, 6, 654, -4, 6};
-    private static final int[] arrayTwo = {0, 7, 2345, 654, -4, 0};
-    private static final boolean expectedResultPositive = true;
-    private static final boolean expectedResultNegative = false;
-    private static final int expectedCountResultOne = 2;
-    private static final int expectedCountResultTwo = 0;
+    private final int numberToSearch = 6;
+    public final int newNumber = 123;
+    private final int[] arrayOne = {0, 7, 2345, 6, 654, -4, 6};
+    private final int[] arrayTwo = {0, 7, 2345, 654, -4, 0};
+    private final boolean expectedResultPositive = true;
+    private final boolean expectedResultNegative = false;
+    private final int expectedCountResultOne = 2;
+    private final int expectedCountResultTwo = 0;
 
     public static void main(String[] args) {
 
@@ -20,6 +19,8 @@ public class ArrayServiceTest {
         test.shouldContainNumber();
         test.countNumbersOccurrences();
         test.shouldReplaceFirstOccurrence();
+        test.shouldReplaceAll();
+        test.shouldRevertArray();
     }
 
     public void shouldContainNumber() {
@@ -42,18 +43,38 @@ public class ArrayServiceTest {
                 actualResultNegative : "Error!");
     }
 
-    public boolean shouldReplaceFirstOccurrence() {
+    public void shouldReplaceFirstOccurrence() {
+        int[] arrayOneBeforeChange = {0, 7, 2345, 6, 654, -4, 6};
+
         ArrayService.replaceFirstElement(arrayOne, numberToSearch, newNumber);
         System.out.println(Arrays.equals(arrayOne, arrayOneBeforeChange) ? "Error! Arrays equal." : "Positive test " +
                 "passed. First occurrence of number " + numberToSearch + " replaced with " + newNumber);
 
         ArrayService.replaceFirstElement(arrayTwo, numberToSearch, newNumber);
-        for (int arrayElement : arrayTwo) {
-            if (arrayElement != numberToSearch) {
-                return false;
-            }
-        }
-        System.out.println("Negative test passed. No number " + numberToSearch + " in array: ");
-        return true;
+        ArrayService.searchNumber(arrayTwo, numberToSearch);
     }
+
+    public void shouldReplaceAll() {
+        int[] array = {0, 7, 2345, 6, 654, -4, 6};
+        int replacementCount = 2;
+
+        int actualResultPositive = ArrayService.replaceAll(array, numberToSearch, newNumber);
+        System.out.println(actualResultPositive == expectedCountResultOne ? "Positive test passed. Number " +
+                numberToSearch + " is replaced for " + replacementCount + " times" : "Error!");
+
+        int actualResultNegative = ArrayService.replaceAll(arrayTwo, numberToSearch, newNumber);
+        System.out.println(actualResultNegative != expectedCountResultOne ? "Negative test passed. No number " +
+                numberToSearch + " in array!" : "Error!");
+    }
+
+    public void shouldRevertArray() {
+        int[] arrayToRevert = {6, -4, 654, 6, 2345, 7, 0};
+        int[] revertedArrayCopy = {0, 7, 2345, 6, 654, -4, 6};
+
+        ArrayService.revertArray(arrayToRevert);
+        System.out.println(Arrays.equals(arrayToRevert, revertedArrayCopy) ? "Test passed. Array is reverted." :
+                "Error!");
+    }
+
+
 }
