@@ -7,7 +7,6 @@ class ArrayService {
     int newNumber;
 
 
-
     public static boolean contains(int[] array, int numberToSearch) {
         for (int number : array) {
             if (number == numberToSearch) {
@@ -43,14 +42,3 @@ class ArrayService {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-

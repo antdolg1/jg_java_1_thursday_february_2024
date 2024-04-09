@@ -9,30 +9,58 @@ class NumberUtils {
 
     }
 
-    public void testIsEvenWithNegativeEvenNumber() {
-        assertTrue(NumberUtils.isEven(-6));
-    }
-
-    public void testIsEvenWithZero() {
-        assertTrue(NumberUtils.isEven(0));
-    }
-
-    public void testIsEvenWithNegativeOddNumber() {
-        assertFalse(NumberUtils.isEven(-3));
-    }
-
-    public void testIsEvenWithEvenNumber() {
-        assertTrue(NumberUtils.isEven(4));
-    }
-
-    public void testIsEvenWithOddNumber() {
-        assertFalse(NumberUtils.isEven(7));
-    }
-
-    private static void assertTrue(boolean even) {
+    public static void testisEvenWithNegativeEvenNumber() {
+        int number = -6;
+        boolean expected = true;
+        boolean result = isEven(number);
+        printTestResult("Negative Even Number", expected, result);
 
     }
 
-    private static void assertFalse(boolean even) {
+    public static void testisEvenWithZero() {
+        int number = 0;
+        boolean expected = true;
+        boolean result = isEven(number);
+        printTestResult("Zero", expected, result);
+
+    }
+
+    public static void testisEvenWithNegativeOddNumber() {
+        int number = -3;
+        boolean expected = false;
+        boolean result = isEven(number);
+        printTestResult("Negative Odd Number", expected, result);
+
+    }
+
+    public static void testisEvenWithEvenNumber() {
+        int number = 4;
+        boolean expected = true;
+        boolean result = isEven(number);
+        printTestResult("Positive Even Number", expected, result);
+
+    }
+
+    public static void testIsEvenWithOddNumber() {
+        int number = 7;
+        boolean expected = false;
+        boolean result = isEven(number);
+        printTestResult("Positive Odd Number", expected, result);
+    }
+
+    private static void printTestResult(String testName, boolean expected, boolean result) {
+        if (expected == result) {
+            System.out.println(testName + ": Test passed");
+        } else {
+            System.out.println(testName + ": Test failed (Expected " + expected + " but got " + result + ")");
+        }
+    }
+
+    public static void main(String[] args) {
+        testisEvenWithNegativeEvenNumber();
+        testisEvenWithZero();
+        testisEvenWithNegativeOddNumber();
+        testisEvenWithEvenNumber();
+        testIsEvenWithOddNumber();
     }
 }
