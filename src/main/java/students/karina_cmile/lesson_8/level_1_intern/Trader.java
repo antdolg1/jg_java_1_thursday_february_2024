@@ -1,5 +1,7 @@
 package students.karina_cmile.lesson_8.level_1_intern;
 
+import java.util.Scanner;
+
 public class Trader {
     private String name;
     private String city;
