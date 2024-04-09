@@ -7,7 +7,7 @@ public class WordService {
     String text = "Orange, apple, grapes, apple, lemon, tangerine";
 
     //Разбиваем текст на слова.//
-    public String findMostFrequentWord(String text) {
+    public static String findMostFrequentWord(String text) {
         String[] words = text.split("\\s*,\\s*");
         Map<String, Integer> wordCount = new HashMap<>();
 
@@ -16,6 +16,7 @@ public class WordService {
         int maxCount = 0;
 //Подсчитываем слова.//
         for (String word : words) {
+            word = word.toLowerCase();
             int count = wordCount.getOrDefault(word, 0) + 1;
             wordCount.put(word, count);
 

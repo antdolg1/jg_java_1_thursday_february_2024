@@ -3,10 +3,6 @@ package students.aleksandra_hodjuka.lesson_7;
 import java.util.Scanner;
 
 class PowerCalculator {
-    double numberToIncrease;
-    int thePowerToRaise;
-
-
     public static void main(String[] args) {
 
         System.out.println("Пожалуйста введите число:");
@@ -22,9 +18,13 @@ class PowerCalculator {
             for (int i = 0; i < thePowerToRaise; i++) {
                 poweredNumber *= numberToIncrease;
             }
-            System.out.println("Результат возведения в степень :"+poweredNumber);
+        } else {
+            thePowerToRaise = -thePowerToRaise;
+            for (int i = 0; i < thePowerToRaise; i++) {
+                poweredNumber *= numberToIncrease;
+            }
 
-
+            System.out.println("Результат возведения в степень :" + poweredNumber);
         }
     }
 }
