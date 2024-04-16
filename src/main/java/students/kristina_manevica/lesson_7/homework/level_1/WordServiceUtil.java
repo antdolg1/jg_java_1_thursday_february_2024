@@ -1,13 +1,9 @@
 package students.kristina_manevica.lesson_7.homework.level_1;
 
-public class WordServiceUtils {
-
-    public static String adjustText(String text) {
-        return text.toLowerCase().replaceAll("[\\p{Punct}\\p{IsPunctuation}]", " ");
-    }
+public class WordServiceUtil {
 
     public static String[] splitText(String text) {
-        return adjustText(text).split("\\s+");
+        return text.toLowerCase().replaceAll("[\\p{Punct}\\p{IsPunctuation}]", " ").split("\\s+");
     }
 
     public static int[] countWordOccurrences(String[] textArray) {

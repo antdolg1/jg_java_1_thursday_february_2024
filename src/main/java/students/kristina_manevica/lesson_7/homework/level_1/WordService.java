@@ -2,16 +2,10 @@ package students.kristina_manevica.lesson_7.homework.level_1;
 
 public class WordService {
 
-    public String findMostFrequentWord(String text) {
-        String[] textArray = WordServiceUtils.splitText(text);
-        int[] wordCountsArray = WordServiceUtils.countWordOccurrences(textArray);
-        int maxWordIndex = WordServiceUtils.findMaxWordIndex(wordCountsArray);
+    public static String findMostFrequentWord(String text) {
+        String[] textArray = WordServiceUtil.splitText(text);
+        int[] wordCountsArray = WordServiceUtil.countWordOccurrences(textArray);
+        int maxWordIndex = WordServiceUtil.findMaxWordIndex(wordCountsArray);
         return textArray[maxWordIndex];
     }
-
-    public static void main(String[] args) {
-
-    }
-
-
 }
