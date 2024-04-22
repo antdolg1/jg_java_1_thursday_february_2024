@@ -8,7 +8,6 @@ public class JavaStarLoginServiceImpl implements JavaStarLoginService {
             && login.equals("javastar")
             && (password != null)
             && password.equals("pass");
-
 }
 
     public static void main(String[] args) {
