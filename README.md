@@ -66,6 +66,12 @@
 * [Лекция 2](https://www.youtube.com/watch?v=ycP0WkItevI)
 * [Лекция 3]()
 * [Лекция 4](https://www.youtube.com/watch?v=oOj2FdCZ0Ig)
+* [Лекция 5](https://www.youtube.com/watch?v=M-KtK-rzaEM)
+* [Лекция 6](https://www.youtube.com/watch?v=z0PXcUJdoSQ)
+* [Лекция 7](https://www.youtube.com/watch?v=VPEBd4Dz19c)
+* [Лекция 8](https://www.youtube.com/watch?v=DV6Vh-q7CjE)
+* [Лекция 9](https://www.youtube.com/watch?v=qDbUSnIBq7s)
+* [Лекция 10](https://www.youtube.com/watch?v=OckYDpWLeKE)
 
 ---
 
