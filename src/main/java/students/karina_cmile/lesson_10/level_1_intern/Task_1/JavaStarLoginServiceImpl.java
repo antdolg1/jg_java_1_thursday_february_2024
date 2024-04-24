@@ -1,4 +1,4 @@
-package students.karina_cmile.lesson_10.level_1_intern;
+package students.karina_cmile.lesson_10.level_1_intern.Task_1;
 
 public class JavaStarLoginServiceImpl implements JavaStarLoginService {
 
