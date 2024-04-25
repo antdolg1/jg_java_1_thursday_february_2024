@@ -1,7 +1,9 @@
 package teacher.lesson_11.lessoncode;
 
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ArrayListDemo {
     public static void main(String[] args) {
@@ -13,6 +15,10 @@ public class ArrayListDemo {
         fruits.add("Banana");
         fruits.add("Kiwi");
         fruits.add("Kiwi");
+        System.out.println(fruits);
+
+        Set<String> uniqueFruits = new LinkedHashSet<>(fruits);
+        System.out.println(uniqueFruits);
 
         //вставка элемента на конкретную позицию
         fruits.add(1, "Blueberry");
