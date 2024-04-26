@@ -3,12 +3,15 @@ package teacher.lesson_11.lessoncode;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class LinkedListDemo {
     public static void main(String[] args) {
 
         LinkedList<String> animals = new LinkedList<>();
         List<String> animals2 = new LinkedList<>();
+
+        Queue<String> animalsQueue = new LinkedList<>();
 
         animals.add("Dog");
         animals.add("Cat");
