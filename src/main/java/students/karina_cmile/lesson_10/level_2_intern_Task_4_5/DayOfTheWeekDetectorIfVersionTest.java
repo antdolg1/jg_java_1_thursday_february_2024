@@ -1,6 +1,4 @@
-package students.karina_cmile.lesson_10.level_2_intern.Task_4;
-
-import students.karina_cmile.lesson_6.level_2_intern.DayOfTheWeekDetector;
+package students.karina_cmile.lesson_10.level_2_intern_Task_4_5;
 
 public class DayOfTheWeekDetectorIfVersionTest {
 

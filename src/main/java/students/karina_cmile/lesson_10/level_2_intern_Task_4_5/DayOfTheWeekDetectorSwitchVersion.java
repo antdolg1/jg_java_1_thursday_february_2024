@@ -1,4 +1,4 @@
-package students.karina_cmile.lesson_10.level_2_intern.Task_4;
+package students.karina_cmile.lesson_10.level_2_intern_Task_4_5;
 
 public class DayOfTheWeekDetectorSwitchVersion implements DayOfTheWeekDetector{
     String dayString;
