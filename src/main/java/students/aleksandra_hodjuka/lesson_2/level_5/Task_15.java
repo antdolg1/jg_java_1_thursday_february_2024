@@ -1,6 +1,6 @@
 package students.aleksandra_hodjuka.lesson_2.level_5;
 
-public class Task_15 {
+ class Task_15 {
     public static void main(String[] args) {
 
 
