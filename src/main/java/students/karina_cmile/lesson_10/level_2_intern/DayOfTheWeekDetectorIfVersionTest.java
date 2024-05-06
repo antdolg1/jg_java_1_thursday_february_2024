@@ -1,8 +1,10 @@
-package students.karina_cmile.lesson_10.level_2_intern_Task_4_5;
+package students.karina_cmile.lesson_10.level_2_intern;
 
-public class DayOfTheWeekDetectorSwitchVersionTest {
+public class DayOfTheWeekDetectorIfVersionTest {
+
+
     public static void main(String[] args) {
-        DayOfTheWeekDetectorSwitchVersionTest test = new DayOfTheWeekDetectorSwitchVersionTest();
+        DayOfTheWeekDetectorIfVersionTest test = new DayOfTheWeekDetectorIfVersionTest();
         test.shouldReturnMonday();
         test.shouldReturnTuesday();
         test.shouldReturnWednesday();
@@ -14,50 +16,50 @@ public class DayOfTheWeekDetectorSwitchVersionTest {
         test.shouldReturnNotCorrectOne();
     }
     public void shouldReturnMonday() {
-        DayOfTheWeekDetectorSwitchVersion detector = new DayOfTheWeekDetectorSwitchVersion();
+        DayOfTheWeekDetectorIfVersion detector = new DayOfTheWeekDetectorIfVersion();
         String dayOfTheWeek = detector.detectDayName(1);
         checkTestResult("Monday".equals(dayOfTheWeek), "Monday");
     }
     public void shouldReturnTuesday() {
-        DayOfTheWeekDetectorSwitchVersion detector = new DayOfTheWeekDetectorSwitchVersion();
+        DayOfTheWeekDetectorIfVersion detector = new DayOfTheWeekDetectorIfVersion();
         String dayOfTheWeek = detector.detectDayName(2);
         checkTestResult("Tuesday".equals(dayOfTheWeek), "Tuesday");
     }
     public void shouldReturnWednesday() {
-        DayOfTheWeekDetectorSwitchVersion detector = new DayOfTheWeekDetectorSwitchVersion();
+        DayOfTheWeekDetectorIfVersion detector = new DayOfTheWeekDetectorIfVersion();
         String dayOfTheWeek = detector.detectDayName(3);
         checkTestResult("Wednesday".equals(dayOfTheWeek), "Wednesday");
     }
     public void shouldReturnThursday() {
-        DayOfTheWeekDetectorSwitchVersion detector = new DayOfTheWeekDetectorSwitchVersion();
+        DayOfTheWeekDetectorIfVersion detector = new DayOfTheWeekDetectorIfVersion();
         String dayOfTheWeek = detector.detectDayName(4);
         checkTestResult("Thursday".equals(dayOfTheWeek), "Thursday");
     }
     public void shouldReturnFriday() {
-        DayOfTheWeekDetectorSwitchVersion detector = new DayOfTheWeekDetectorSwitchVersion();
+        DayOfTheWeekDetectorIfVersion detector = new DayOfTheWeekDetectorIfVersion();
         String dayOfTheWeek = detector.detectDayName(5);
         checkTestResult("Friday".equals(dayOfTheWeek), "Friday");
     }
     public void shouldReturnSaturday() {
-        DayOfTheWeekDetectorSwitchVersion detector = new DayOfTheWeekDetectorSwitchVersion();
+        DayOfTheWeekDetectorIfVersion detector = new DayOfTheWeekDetectorIfVersion();
         String dayOfTheWeek = detector.detectDayName(6);
         checkTestResult("Saturday".equals(dayOfTheWeek), "Saturday");
     }
     public void shouldReturnSunday() {
-        DayOfTheWeekDetectorSwitchVersion detector = new DayOfTheWeekDetectorSwitchVersion();
+        DayOfTheWeekDetectorIfVersion detector = new DayOfTheWeekDetectorIfVersion();
         String dayOfTheWeek = detector.detectDayName(7);
         checkTestResult("Sunday".equals(dayOfTheWeek), "Sunday");
     }
 
     public void shouldReturnNotCorrect() {
-        DayOfTheWeekDetectorSwitchVersion detector = new DayOfTheWeekDetectorSwitchVersion();
-        String dayOfTheWeek = detector.detectDayName(10);
-        checkTestResult("Not correct day number 10 ".equals(dayOfTheWeek), "Not correct day number 10 ");
+        DayOfTheWeekDetectorIfVersion detector = new DayOfTheWeekDetectorIfVersion();
+        String dayOfTheWeek = detector.detectDayName(0);
+        checkTestResult("Not correct day number 0 ".equals(dayOfTheWeek), "Not correct day number 0 ");
     }
     public void shouldReturnNotCorrectOne() {
-        DayOfTheWeekDetectorSwitchVersion detector = new DayOfTheWeekDetectorSwitchVersion();
-        String dayOfTheWeek = detector.detectDayName(15);
-        checkTestResult("Not correct day number 15 ".equals(dayOfTheWeek), "Not correct day number 15 ");
+        DayOfTheWeekDetectorIfVersion detector = new DayOfTheWeekDetectorIfVersion();
+        String dayOfTheWeek = detector.detectDayName(8);
+        checkTestResult("Not correct day number 8 ".equals(dayOfTheWeek), "Not correct day number 8 ");
     }
 
     private void checkTestResult(boolean condition, String testName) {
@@ -68,3 +70,8 @@ public class DayOfTheWeekDetectorSwitchVersionTest {
         }
     }
 }
+
+
+
+
+

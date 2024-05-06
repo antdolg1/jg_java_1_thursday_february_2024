@@ -1,4 +1,4 @@
-package students.karina_cmile.lesson_10.level_2_intern_Task_4_5;
+package students.karina_cmile.lesson_10.level_2_intern;
 
 import java.util.Scanner;
 

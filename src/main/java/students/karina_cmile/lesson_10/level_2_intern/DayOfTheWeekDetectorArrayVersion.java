@@ -1,4 +1,4 @@
-package students.karina_cmile.lesson_10.level_2_intern_Task_4_5;
+package students.karina_cmile.lesson_10.level_2_intern;
 
 public class DayOfTheWeekDetectorArrayVersion implements DayOfTheWeekDetector {
     String[] week = {"0", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
