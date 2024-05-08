@@ -4,7 +4,6 @@ public class SumOfTwoNumbers {
 
     public static void main(String[] args) {
 
-
         int numberOne = 10;
         int numberTwo = 20;
 
@@ -15,5 +14,4 @@ public class SumOfTwoNumbers {
 
         System.out.println("Sum = " + sum);
     }
-
 }
