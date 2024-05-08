@@ -12,7 +12,7 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    double calculateArea() {
+    double calculateArea() throws ArithmeticException {
         if (sideLong == 0 || sideShort == 0) {
             throw new ArithmeticException("Side cannot be zero!");
         }
@@ -20,7 +20,7 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    double calculatePerimeter() {
+    double calculatePerimeter() throws ArithmeticException {
         if (sideLong == 0 || sideShort == 0) {
             throw new ArithmeticException("Side cannot be zero!");
         }

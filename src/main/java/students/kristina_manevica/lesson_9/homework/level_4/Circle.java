@@ -10,7 +10,7 @@ public class Circle extends Shape {
     }
 
     @Override
-    double calculateArea() {
+    double calculateArea() throws ArithmeticException {
         if (radius == 0) {
             throw new ArithmeticException("Radius cannot be zero!");
         }
@@ -18,7 +18,7 @@ public class Circle extends Shape {
     }
 
     @Override
-    double calculatePerimeter() {
+    double calculatePerimeter() throws ArithmeticException {
         if (radius == 0) {
             throw new ArithmeticException("Radius cannot be zero!");
         }

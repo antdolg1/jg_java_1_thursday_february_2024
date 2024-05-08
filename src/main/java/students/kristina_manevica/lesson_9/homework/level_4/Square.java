@@ -10,7 +10,7 @@ public class Square extends Shape {
     }
 
     @Override
-    double calculateArea() {
+    double calculateArea() throws ArithmeticException {
         if (side == 0) {
             throw new ArithmeticException("Side cannot be zero!");
         }
@@ -18,7 +18,7 @@ public class Square extends Shape {
     }
 
     @Override
-    double calculatePerimeter() {
+    double calculatePerimeter() throws ArithmeticException {
         if (side == 0) {
             throw new ArithmeticException("Side cannot be zero!");
         }
