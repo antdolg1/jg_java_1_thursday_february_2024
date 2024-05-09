@@ -37,23 +37,47 @@ public class Customer {
     }
 
     public static List<Customer> getAllCustomersFromMap(Gender gender) {
-        List<Customer> customers = new ArrayList<>();
+        List<Customer> customerList = new ArrayList<>();
         for (Customer customer : customerMap.values()) {
             if (customer.gender == gender) {
-                customers.add(customer);
+                customerList.add(customer);
             }
         }
-        return customers;
+        return customerList;
+    }
+
+    public static int getTotalCustomerAmount() {
+        return customerMap.size();
+    }
+
+    public static int getTotalCustomerAmount(Gender gender) {
+        return getAllCustomersFromMap(gender).size();
+    }
+
+    public static int getAllCustomersAge() {
+        int totalCustomersAge = 0;
+        for (Customer customer : customerMap.values()) {
+            totalCustomersAge += customer.age; //totalCustomersAge = totalCustomersAge + customer.age;
+        }
+        return totalCustomersAge;
+    }
+
+    public static int getAllCustomersAge(Gender gender) {
+        int totalCustomersAge = 0;
+        for (Customer customer : getAllCustomersFromMap(gender)) {
+            totalCustomersAge += customer.age; //totalCustomersAge = totalCustomersAge + customer.age;
+        }
+        return totalCustomersAge;
     }
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "Customer [" +
                 "id=" + id +
                 ", email='" + email + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
-                '}';
+                ']';
     }
 
     @Override
@@ -61,11 +85,11 @@ public class Customer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Customer customer = (Customer) o;
-        return id == customer.id && age == customer.age && Objects.equals(email, customer.email) && gender == customer.gender;
+        return age == customer.age && Objects.equals(email, customer.email) && gender == customer.gender;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, email, age, gender);
+        return Objects.hash(email, age, gender);
     }
 }
