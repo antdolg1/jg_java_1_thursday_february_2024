@@ -8,10 +8,6 @@ import static org.junit.Assert.*;
 
 @RunWith(Enclosed.class)
 class ArrayServiceTestCorrect {
-
-
-
-
     public static class ArrayServiceTest {
         public static void main(String[] args) {
             students.aleksandra_hodjuka.level_3.ArrayServiceTest test = new students.aleksandra_hodjuka.level_3.ArrayServiceTest();
@@ -23,20 +19,7 @@ class ArrayServiceTestCorrect {
             test.testCountOccurrences_SeveralOccurrences();
         }
 
-        public void shouldReturnPositiveNumber() {
-            ArrayService arrayService = new ArrayService();
-            int[] array = {1, 1, 3, 3, 5};
-            int numberToSearch = 1;
-            boolean realResult = ArrayService.contains(array, numberToSearch);
-            boolean expectedResult = true;
-
-            if (realResult == expectedResult) {
-                System.out.println(numberToSearch + " = Данное число есть в массиве! - Passed");
-            } else {
-                System.out.println(numberToSearch + " = Данного числа нет в массиве! - Failed");
-            }
-        }
-
+        @Test
         public void testContainsEmptyArray() {
             ArrayService arrayService = new ArrayService();
             int[] array = {};
@@ -51,6 +34,7 @@ class ArrayServiceTestCorrect {
             }
         }
 
+        @Test
         public void testCountOccurrences_PositiveScenario() {
             ArrayService arrayService = new ArrayService();
             int[] array = {1, 1, 3, 3, 5};
@@ -65,6 +49,7 @@ class ArrayServiceTestCorrect {
             }
         }
 
+        @Test
         public void testCountOccurrences_NegativeScenario() {
             ArrayService arrayService = new ArrayService();
             int[] array = {1, 1, 3, 3, 5};
@@ -79,6 +64,7 @@ class ArrayServiceTestCorrect {
             }
         }
 
+        @Test
         public void testCountOccurrences_EmptyArray() {
             ArrayService arrayService = new ArrayService();
             int[] array = {};
@@ -93,6 +79,7 @@ class ArrayServiceTestCorrect {
             }
         }
 
+        @Test
         public void testCountOccurrences_SeveralOccurrences() {
             ArrayService arrayService = new ArrayService();
             int[] array = {1, 1, 3, 3, 5};
