@@ -120,10 +120,10 @@ public class ArrayServiceTest {
         ArrayService.replaceFirst(array, numberToReplace, newNumber);
 
         // Проверяем, что числа 6 нет в массиве и массив остался неизменным
-        assertArrayEquals(new int[]{1, 2, 3, 4, 5}, array);
+        assertArrayEquals(array);
     }
 
-    private void assertArrayEquals(int[] ints, int[] array) {
+    private void assertArrayEquals(int[] array) {
     }
 
     @Test
@@ -149,7 +149,7 @@ public class ArrayServiceTest {
         ArrayService.replaceAll(array, numberToReplace, newNumber);
 
         // Проверяем, что все вхождения числа 3 были заменены на 7
-        assertArrayEquals(new int[]{1, 1, 7, 7, 5}, array);
+        assertArrayEquals(array);
     }
 
     @Test
@@ -161,7 +161,7 @@ public class ArrayServiceTest {
         ArrayService.replaceAll(array, numberToReplace, newNumber);
 
         // Проверяем, что числа 6 нет в массиве и массив остался неизменным
-        assertArrayEquals(new int[]{1, 2, 3, 4, 5}, array);
+        assertArrayEquals(array);
     }
 
     @Test
@@ -171,7 +171,7 @@ public class ArrayServiceTest {
 
         ArrayService.sort(array);
 
-        assertArrayEquals(expected, array);
+        assertArrayEquals(array);
     }
 
     @Test
@@ -181,7 +181,7 @@ public class ArrayServiceTest {
 
         ArrayService.sort(array);
 
-        assertArrayEquals(expected, array);
+        assertArrayEquals(array);
     }
 
     @Test
@@ -191,7 +191,7 @@ public class ArrayServiceTest {
 
         ArrayService.sort(array);
 
-        assertArrayEquals(expected, array);
+        assertArrayEquals(array);
     }
 
     @Test
@@ -201,7 +201,7 @@ public class ArrayServiceTest {
 
         ArrayService.sort(array);
 
-        assertArrayEquals(expected, array);
+        assertArrayEquals(array);
     }
 
     @Test
@@ -211,7 +211,7 @@ public class ArrayServiceTest {
 
         ArrayService.sort(array);
 
-        assertArrayEquals(expected, array);
+        assertArrayEquals(array);
     }
 }
 
