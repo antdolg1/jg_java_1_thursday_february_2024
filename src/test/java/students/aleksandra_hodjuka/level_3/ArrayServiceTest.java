@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.*;
 
 @RunWith(Enclosed.class)
-public class ArrayServiceTestCorrect {
+class ArrayServiceTestCorrect {
 
 
 
