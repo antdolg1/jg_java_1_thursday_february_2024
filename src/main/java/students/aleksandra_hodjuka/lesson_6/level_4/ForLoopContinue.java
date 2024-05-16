@@ -1,4 +1,4 @@
-package students.aleksandra_hodjuka.level_4;
+package students.aleksandra_hodjuka.lesson_6.level_4;
 
 public class ForLoopContinue {
     public static void main(String[] args) {

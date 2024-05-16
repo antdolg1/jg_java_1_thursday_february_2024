@@ -1,4 +1,4 @@
-package students.aleksandra_hodjuka.level_2;
+package students.aleksandra_hodjuka.lesson_6.level_2;
 
 class DayOfTheWeekDetectorDemo {
     public static void main(String[] args) {

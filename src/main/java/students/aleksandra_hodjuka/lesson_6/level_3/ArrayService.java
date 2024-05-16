@@ -1,4 +1,4 @@
-package students.aleksandra_hodjuka.level_3;
+package students.aleksandra_hodjuka.lesson_6.level_3;
 
 import java.util.Arrays;
 
