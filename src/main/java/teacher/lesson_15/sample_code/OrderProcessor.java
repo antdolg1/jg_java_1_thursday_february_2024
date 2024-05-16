@@ -25,7 +25,7 @@ public class OrderProcessor {
      * @param orderId ID of the order
      * @param userToken Unique userToken which identifies user in the system
      */
-    public void processOrder(String orderId, String userToken) {
+    public void processOrder(String orderId, String userToken) throws OrderNotFoundException {
         Order order = getOrder(orderId);
         if (order.getStatus() == OrderStatus.NEW) {
             processNewOrder(order, userToken);
@@ -68,11 +68,15 @@ public class OrderProcessor {
             .user("User_01")
             .build();
 
+    String order2Id = order2.getId();
+
     Order order3 = Order.builder().build();
 
     Order order4 = Order.builder()
             .totalAmount(10.0)
             .build();
+
+
 
     // Other methods...
 }
