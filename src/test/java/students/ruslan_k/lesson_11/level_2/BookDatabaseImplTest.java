@@ -41,8 +41,8 @@ public class BookDatabaseImplTest {
 
     @Test
     public void deleteBookById_Test() {
-        assertTrue(bookDatabase.delete(1l));
-        assertFalse(bookDatabase.delete(1l));
+        assertTrue(bookDatabase.delete(1L));
+        assertFalse(bookDatabase.delete(1L));
 
 
     }
@@ -55,8 +55,8 @@ public class BookDatabaseImplTest {
 
     @Test
     public void findBookById_Test() {
-        assertEquals(Optional.of(book12), bookDatabase.findById(2l));
-        assertEquals(Optional.empty(), bookDatabase.findById(7l));
+        assertEquals(Optional.of(book12), bookDatabase.findById(2L));
+        assertEquals(Optional.empty(), bookDatabase.findById(7L));
     }
 
     @Test
