@@ -1,4 +1,4 @@
-Продолжаем улучшать код в классе DayOfTheWeekDetectorDemo.
+ Продолжаем улучшать код в классе DayOfTheWeekDetectorDemo.
 
 Пришло время протестировать созданный нами метод findDayOfTheWeek().
 
