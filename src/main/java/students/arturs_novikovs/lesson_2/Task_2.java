@@ -5,13 +5,13 @@ public class Task_2 {
 public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Введите число.");
-    double firstDoubleNumber = scanner.nextDouble();
+    double firstNumber = scanner.nextDouble();
     System.out.println("Введите второе число");
-    double secondDoubleNember = scanner.nextDouble();
-    double sum = firstDoubleNumber + secondDoubleNember;
-    double sub = firstDoubleNumber - secondDoubleNember;
-    double mult = firstDoubleNumber * secondDoubleNember;
-    double div = firstDoubleNumber / secondDoubleNember;
+    double secondNumber = scanner.nextDouble();
+    double sum = firstNumber + secondNumber;
+    double sub = firstNumber - secondNumber;
+    double mult = firstNumber * secondNumber;
+    double div = firstNumber / secondNumber;
 
     System.out.println("Sum :" + sum);
     System.out.println("Sub :" + sub);

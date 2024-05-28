@@ -30,11 +30,5 @@ public class InfoOutput {
         String discountString = String.format("Discount: %.0f%%", discount * 100);
         System.out.println(discountString);
 
-
-
-
-
-
-
     }
 }
