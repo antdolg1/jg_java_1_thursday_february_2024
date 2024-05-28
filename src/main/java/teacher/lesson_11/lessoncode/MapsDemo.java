@@ -7,6 +7,10 @@ public class MapsDemo {
     public static void main(String[] args) {
         //не гарантирует порядка в котором элементы были добавлены
         Map<Integer, String> hashMap = new HashMap<>();
+        HashMap s = new HashMap(); //raw types, когда мы не указываем типы параметров
+        s.put(1, "Ferrari");
+        s.put("dsadsa", true);
+        System.out.println(s);
 
         //элементы сохраняют порядок, в котором были добалены
         Map<Integer, String> linkedHashMap = new LinkedHashMap<>();
