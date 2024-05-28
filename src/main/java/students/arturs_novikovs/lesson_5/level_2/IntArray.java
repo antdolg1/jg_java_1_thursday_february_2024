@@ -8,3 +8,4 @@ package students.arturs_novikovs.lesson_5.level_2;
             }
         }
     }
+
