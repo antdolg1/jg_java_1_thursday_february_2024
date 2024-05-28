@@ -33,7 +33,7 @@ public class ArrayService {
         int number = scanner.nextInt();
     }
 
-    public static boolean containsIntValue (int[] arr, int number) {
+    public static boolean contains (int[] arr, int number) {
         for (int element: arr){
           if (number == element) {
                 return true;
@@ -48,7 +48,7 @@ public class ArrayService {
         ArrayService.fillArrayWithRandomNumbers(arr);
         ArrayService.printArrToConsole(arr);
         ArrayService.numberToSearch();
-//        ArrayService.containsIntValue(); - не получилось вызвать метод. Не могу понять, где ошибка.
+        // ArrayService.contains();  не получилось вызвать метод. Не могу понять, где ошибка.
     }
 
 }
