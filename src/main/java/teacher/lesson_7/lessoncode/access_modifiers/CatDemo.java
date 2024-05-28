@@ -12,7 +12,7 @@ public class CatDemo {
         String catNickname = cat1.getNickname();
         System.out.println("cat1 age is " + catAge + ", and name is " + catNickname);
 
-//        cat1.setAge(2);
+        cat1.setAge(2);
         catAge = cat1.getAge();
         System.out.println("cat1 age is " + catAge + ", and name is " + catNickname);
 
