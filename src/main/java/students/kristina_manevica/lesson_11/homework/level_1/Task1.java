@@ -3,8 +3,13 @@ package students.kristina_manevica.lesson_11.homework.level_1;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Task1 {
+
+    public static final Logger logger = Logger.getLogger(Task1.class.getName());
+
     public static void main(String[] args) {
 
         List<Integer> numbers = new ArrayList<>(2);
@@ -14,7 +19,7 @@ public class Task1 {
         }
         numbers.set(0, -2);
 
-        System.out.println(numbers);
+        logger.info("Numbers: " + numbers);
 
         List<String> names = new LinkedList<>();
 
@@ -23,7 +28,7 @@ public class Task1 {
         names.add("Three");
         names.set(0, "Zero");
 
-        System.out.println(names);
+        logger.info("Names: " + names);
     }
 
     /*
