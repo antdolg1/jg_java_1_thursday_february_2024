@@ -14,6 +14,7 @@ public class ArraysApp {
         animals[4] = "Крокодил";
         animals[2] = "Орёл";
 
+
         //вывод всех элементов массива в консоль
         for (int i = 0; i < animals.length; i++){
             System.out.println("[" + i +"]" + " = " + animals[i]);
