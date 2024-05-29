@@ -331,5 +331,3 @@ public class ArrayServiceTest {
         return true;
     }
 }
-
-

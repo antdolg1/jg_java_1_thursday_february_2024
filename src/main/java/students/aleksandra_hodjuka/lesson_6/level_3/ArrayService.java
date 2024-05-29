@@ -88,5 +88,4 @@ class ArrayService {
         sort(array);
         System.out.println("Массив после сортировки: " + Arrays.toString(array));
     }
-
 }
