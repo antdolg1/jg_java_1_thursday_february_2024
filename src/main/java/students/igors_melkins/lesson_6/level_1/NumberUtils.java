@@ -23,5 +23,6 @@ public class NumberUtils {
         boolean realResult = NumberUtils.isEven(number);
         System.out.println("Test with number :" + number);
         System.out.println("Expected result :" + expectedResult + "Actual result :" + realResult );
+
     }
 }

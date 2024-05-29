@@ -10,7 +10,6 @@ public class DayOfTheWeekDetector {
     }
     public String findDayOfTheWeek(int dayNumber){
         String dayOfTheWeek ;
-
         switch (dayNumber){
             case 1:
                 dayOfTheWeek = "Monday";

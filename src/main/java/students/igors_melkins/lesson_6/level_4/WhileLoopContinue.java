@@ -9,6 +9,7 @@ public class WhileLoopContinue {
                 continue;
             }
             System.out.println("Current value of i :" + i);
+
         }
     }
 }

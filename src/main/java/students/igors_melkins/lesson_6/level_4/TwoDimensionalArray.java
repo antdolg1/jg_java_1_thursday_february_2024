@@ -17,5 +17,6 @@ public class TwoDimensionalArray {
             System.out.println();
         }
         System.out.println("The sum of all numbers in a two-dimensional array: " + sum);
+
     }
 }

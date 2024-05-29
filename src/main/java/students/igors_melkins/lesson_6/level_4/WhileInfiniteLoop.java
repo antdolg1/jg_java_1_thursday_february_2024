@@ -4,6 +4,7 @@ public class WhileInfiniteLoop {
     public static void main(String[] args) {
         while (true) {
             System.out.println("This while loop is infinite: ");
+
         }
     }
 }

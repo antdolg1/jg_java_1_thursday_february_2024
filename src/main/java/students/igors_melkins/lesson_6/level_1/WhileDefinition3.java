@@ -6,6 +6,7 @@ public class WhileDefinition3 {
         while (i <= 100) {
             System.out.println(i);
             i++;
+
         }
     }
 }

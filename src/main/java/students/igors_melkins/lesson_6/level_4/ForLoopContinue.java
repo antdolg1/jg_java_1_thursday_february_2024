@@ -7,7 +7,6 @@ public class ForLoopContinue {
                 continue;
             }
             System.out.println("Current value of i : " + i);
-
         }
     }
 }

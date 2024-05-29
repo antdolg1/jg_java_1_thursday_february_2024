@@ -49,7 +49,6 @@ public class DayOfTheWeekDetectorTest {
         checkTestResult("Sunday".equals(dayOfTheWeek),"Sunday");
 
     }
-
     private void checkTestResult(boolean condition ,String testName) {
         if ( condition){
             System.out.println(testName + " = OK!");
