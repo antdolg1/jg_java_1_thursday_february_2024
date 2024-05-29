@@ -6,5 +6,4 @@ public class WhileInfiniteLoop {
             System.out.println("This while loop is infinite: ");
         }
     }
-
 }

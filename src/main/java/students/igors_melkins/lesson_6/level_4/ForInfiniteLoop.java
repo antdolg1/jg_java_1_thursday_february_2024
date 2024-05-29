@@ -5,5 +5,6 @@ public class ForInfiniteLoop {
             for (;;){
                 System.out.println("This while is infinity : ");
             }
+
     }
 }

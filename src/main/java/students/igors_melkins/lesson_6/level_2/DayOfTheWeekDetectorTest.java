@@ -10,14 +10,11 @@ public class DayOfTheWeekDetectorTest {
         test.shouldReturnFriday();
         test.shouldReturnSaturday ();
         test.shouldReturnSunday ();
-
     }
-
     public void shouldReturnMonday () {
         DayOfTheWeekDetector detector = new DayOfTheWeekDetector();
         String dayOfTheWeek = detector.findDayOfTheWeek(1);
         checkTestResult("Monday".equals(dayOfTheWeek),"Monday");
-
     }
     public void  shouldReturnTuesday(){
        DayOfTheWeekDetector detector = new DayOfTheWeekDetector();
@@ -52,8 +49,6 @@ public class DayOfTheWeekDetectorTest {
         checkTestResult("Sunday".equals(dayOfTheWeek),"Sunday");
 
     }
-
-
 
     private void checkTestResult(boolean condition ,String testName) {
         if ( condition){

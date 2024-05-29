@@ -8,6 +8,7 @@ public class WhileInfiniteLoopBreak {
             i++;
             if (i == 5 ){
                 break;
+
             }
         }
     }

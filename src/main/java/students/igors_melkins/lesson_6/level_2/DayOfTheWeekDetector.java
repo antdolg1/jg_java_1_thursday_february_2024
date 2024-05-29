@@ -7,9 +7,7 @@ public class DayOfTheWeekDetector {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Put  day number between 1 to 7 ");
         return scanner.nextInt();
-
     }
-
     public String findDayOfTheWeek(int dayNumber){
         String dayOfTheWeek ;
 
@@ -38,32 +36,22 @@ public class DayOfTheWeekDetector {
                 break;
             default:
                 dayOfTheWeek = "Invalid day number";
-
         }
         return dayOfTheWeek;
     }
-
-
     public void shouldReturnMonday() {
     }
-
     public void shouldReturnTuesday() {
     }
-
     public void shouldReturnWednesday() {
     }
-
     public void shouldReturnThursday() {
     }
-
     public void shouldReturnFriday() {
     }
-
     public void shouldReturnSaturday() {
     }
-
     public void shouldReturnSunday() {
-
     }
 }
 

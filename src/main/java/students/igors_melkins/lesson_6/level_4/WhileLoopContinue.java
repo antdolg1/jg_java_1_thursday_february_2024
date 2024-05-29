@@ -10,6 +10,5 @@ public class WhileLoopContinue {
             }
             System.out.println("Current value of i :" + i);
         }
-
     }
 }
