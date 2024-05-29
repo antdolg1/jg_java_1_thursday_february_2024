@@ -93,14 +93,24 @@ public class BookDatabaseImpl implements BookDatabase {
             books.removeAll(booksRemoveByAuthor);
     }
 
+    @Override
+    public void deleteByTitle(String title) {
+        List<Book> booksRemoveByTitle = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getTitle().equals(title)) {
+                booksRemoveByTitle.add(book);
+            }
+        }
+        books.removeAll(booksRemoveByTitle);
+    }
+
     //по-другому не понимаю как проверить что действительно удалилась книга из database
-    //мне надо днайти книгу из созданных книг
+    //мне надо днайти книгу из всех созданных книг
     public List<Book> getBooks() {
         return books;
     }
 
-
-
+    //оставила себе
     /*public Book searchBookById(Long bookId) {
         return books.stream()
                 .filter(book -> book.getId().equals(bookId))

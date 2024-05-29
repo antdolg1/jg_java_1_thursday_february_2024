@@ -20,4 +20,6 @@ public interface BookDatabase {
     int countAllBooks();
 
     void deleteByAuthor(String author);
+
+    void deleteByTitle(String title);
 }

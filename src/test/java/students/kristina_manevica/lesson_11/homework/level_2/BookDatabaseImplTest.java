@@ -179,4 +179,37 @@ class BookDatabaseImplTest {
         Assertions.assertEquals(3, totalBooksCount, "Total number of books don't match, should be 3!");
     }
 
+    @Test
+    void testDeleteBook_ByAuthor() {
+        bookDatabaseImpl.save(bookOne);
+        bookDatabaseImpl.save(bookTwo);
+
+        bookDatabaseImpl.deleteByAuthor("K.Manevica");
+
+        List<Book> booksAuthorFound = bookDatabaseImpl.findByAuthor("K.Manevica");
+        Assertions.assertTrue(booksAuthorFound.isEmpty(), "Books by author K.Manevica is found! Should be deleted!");
+
+        List<Book> booksOtherAuthor = bookDatabaseImpl.findByAuthor("I.Ivarton");
+        Assertions.assertFalse(booksOtherAuthor.isEmpty(), "Books by author I.Ivarton is deleted! Should not!");
+
+        int totalBooksCount = bookDatabaseImpl.countAllBooks();
+        Assertions.assertEquals(1, totalBooksCount, "Total number of books should be 1 after deletion!");
+    }
+
+    @Test
+    void testDeleteBook_ByTitle() {
+        bookDatabaseImpl.save(bookOne);
+        bookDatabaseImpl.save(bookTwo);
+
+        bookDatabaseImpl.deleteByTitle("It works locally");
+
+        List<Book> booksTitleFound = bookDatabaseImpl.findByTitle("It works locally");
+        Assertions.assertTrue(booksTitleFound.isEmpty(), "Books by title is found! Should be deleted!");
+
+        List<Book> booksOtherTitle = bookDatabaseImpl.findByTitle("I love QA");
+        Assertions.assertFalse(booksOtherTitle.isEmpty(), "Books by title is deleted! Should not!");
+
+        int totalBooksCount = bookDatabaseImpl.countAllBooks();
+        Assertions.assertEquals(1, totalBooksCount, "Total number of books should be 1 after deletion!");
+    }
 }
