@@ -1,29 +1,23 @@
 package students.kristina_manevica.lesson_11.homework.level_2;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
-import static junit.framework.TestCase.assertNotNull;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNull;
 
 class BookDatabaseImplTest {
 
     private static BookDatabaseImpl bookDatabaseImpl;
-    private static Logger logger;
     private Book bookOne;
     private Book bookTwo;
 
     @BeforeEach
     void setUp() {
         bookDatabaseImpl = new BookDatabaseImpl();
-        logger = Logger.getLogger(BookDatabaseImplTest.class.getName());
 
         bookOne = new Book("K.Manevica", "I love QA");
         bookTwo = new Book("I.Ivarton", "It works locally");
@@ -40,14 +34,11 @@ class BookDatabaseImplTest {
 
         //попробовала что бы не каждый отдельно проверять на null, не дублировать
         for (Long id : bookIds) {
-            assertNotNull("ID should not be zero", id);
+            Assertions.assertNotNull(id, "ID should not be zero");
         }
 
-        assertEquals(Long.valueOf(1), bookOneId);
-        assertEquals(Long.valueOf(2), bookTwoId);
-
-        logger.info("Book One ID: " + bookOneId);
-        logger.info("Book Two ID: " + bookTwoId);
+        Assertions.assertEquals(Long.valueOf(1), bookOneId);
+        Assertions.assertEquals(Long.valueOf(2), bookTwoId);
     }
 
     @Test
@@ -56,10 +47,33 @@ class BookDatabaseImplTest {
         bookDatabaseImpl.save(bookOne);
         bookDatabaseImpl.save(bookTwo);
 
-        Boolean bookOneIsDeleted = bookDatabaseImpl.delete(1L);
-        assertTrue("Book One is not deleted!", bookOneIsDeleted);
-        assertNull(bookDatabaseImpl.searchBookById(Long.valueOf(1L)), "First book is not deleted!");
+        List<Book> books = bookDatabaseImpl.getBooks();
 
-        assertNotNull("Second book should not be deleted!", bookDatabaseImpl.searchBookById(Long.valueOf(2L)));
+        boolean bookOneIsDeleted = bookDatabaseImpl.delete(1L);
+
+        //проверка что действительно удалилась первая
+        boolean bookOneExists = false;
+        for (Book book : books) {
+            if (book.getId().equals(1L)) {
+                bookOneExists = true;
+                break;
+            }
+        }
+
+        assertFalse(bookOneExists, "First book is not deleted!");
+
+        //проверка что вторая не удалилась
+        boolean bookTwoExists = false;
+        for (Book book : books) {
+            if (book.getId().equals(2L)) {
+                bookTwoExists = true;
+                break;
+            }
+        }
+        Assertions.assertTrue(bookTwoExists, "Second book should not be deleted!");
+
+        //другие решения, сохраню здесь
+        /*assertNull(bookDatabaseImpl.searchBookById(Long.valueOf(1L)), "First book is not deleted!");
+        assertNotNull("Second book should not be deleted!", bookDatabaseImpl.searchBookById(Long.valueOf(2L)));*/
     }
 }

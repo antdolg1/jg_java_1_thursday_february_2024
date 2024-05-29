@@ -20,15 +20,32 @@ public class BookDatabaseImpl implements BookDatabase {
     }
 
     @Override
-    public boolean delete(Long bookId) {
+    //по другому метод delete
+    /* public boolean delete(Long bookId) {
         return books.removeIf(book -> book.getId().equals(bookId));
+    }*/
+    public boolean delete(Long bookId) {
+        for (int i = 0; i < books.size(); i++) {
+            if (books.get(i).getId().equals(bookId)) {
+                books.remove(i);
+                return true;
+            }
+        }
+        return false;
     }
 
+    public List<Book> getBooks() {
+        return books;
+    }
+
+
     //по-другому не понимаю как проверить что действительно удалилась книга из database
-    public Book searchBookById(Long bookId) {
+    //мне надо днайти книгу из созданных книг
+
+    /*public Book searchBookById(Long bookId) {
         return books.stream()
                 .filter(book -> book.getId().equals(bookId))
                 .findFirst()
                 .orElse(null);
-    }
+    }*/
 }
