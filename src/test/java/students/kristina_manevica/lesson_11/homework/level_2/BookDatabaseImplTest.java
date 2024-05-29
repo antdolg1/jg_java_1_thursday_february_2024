@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class BookDatabaseImplTest {
@@ -24,7 +23,7 @@ class BookDatabaseImplTest {
 
         bookOne = new Book("K.Manevica", "I love QA");
         bookTwo = new Book("I.Ivarton", "It works locally");
-        bookThree = new Book("K.Manevica", "It is bug, not a feature");
+        bookThree = new Book("K.Manevica", "No, it's a bug, not feature");
     }
 
     @Test
@@ -127,7 +126,7 @@ class BookDatabaseImplTest {
     }
 
     @Test
-    void findByAuthor() {
+    void testFindBook_ByAuthor() {
         bookDatabaseImpl.save(bookOne);
         bookDatabaseImpl.save(bookTwo);
         bookDatabaseImpl.save(bookThree);
@@ -137,7 +136,7 @@ class BookDatabaseImplTest {
 
         Assertions.assertEquals(2, booksAuthorFound.size(), "Should be found 2 books by author: "
                 + bookOne.getAuthor());
-        Assertions.assertEquals(0, booksNotExistentAuthor.size(), "Should not be found any book by");
+        Assertions.assertEquals(0, booksNotExistentAuthor.size(), "Should not be found any book");
 
         for (Book book : booksAuthorFound) {
             Assertions.assertEquals("K.Manevica", book.getAuthor(), "Book with such author should exist!");
@@ -148,5 +147,36 @@ class BookDatabaseImplTest {
         }
     }
 
+    @Test
+    void testFindBook_ByTitle() {
+        bookDatabaseImpl.save(bookOne);
+        bookDatabaseImpl.save(bookTwo);
+
+        List<Book> booksTitleFound = bookDatabaseImpl.findByTitle("I love QA");
+        List<Book> booksNotExistentTitle = bookDatabaseImpl.findByTitle("PR without US");
+
+        Assertions.assertEquals(1, booksTitleFound.size(), "Should be found 1 book by title: "
+                + bookOne.getTitle());
+        Assertions.assertEquals(0, booksNotExistentTitle.size(), "Should not be found any book by such " +
+                "title");
+
+        for (Book book : booksTitleFound) {
+            Assertions.assertEquals("I love QA", book.getTitle(), "Book with such title should exist!");
+        }
+
+        for (Book book : booksNotExistentTitle) {
+            Assertions.assertTrue(booksNotExistentTitle.isEmpty(), "Found book with non-existing title!");
+        }
+    }
+
+    @Test
+    void testCountAllBooks() {
+        bookDatabaseImpl.save(bookOne);
+        bookDatabaseImpl.save(bookTwo);
+        bookDatabaseImpl.save(bookThree);
+
+        int totalBooksCount = bookDatabaseImpl.countAllBooks();
+        Assertions.assertEquals(3, totalBooksCount, "Total number of books don't match, should be 3!");
+    }
 
 }

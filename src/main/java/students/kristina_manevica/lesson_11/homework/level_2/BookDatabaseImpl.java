@@ -66,6 +66,33 @@ public class BookDatabaseImpl implements BookDatabase {
         return booksByAuthor;
     }
 
+    @Override
+    public List<Book> findByTitle(String title) {
+        List<Book> booksByTitle = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getTitle().equals(title)) {
+                booksByTitle.add(book);
+            }
+        }
+        return booksByTitle;
+    }
+
+    @Override
+    public int countAllBooks() {
+        return books.size();
+    }
+
+    @Override
+    public void deleteByAuthor(String author) {
+            List<Book> booksRemoveByAuthor = new ArrayList<>();
+            for (Book book : books) {
+                if (book.getAuthor().equals(author)) {
+                    booksRemoveByAuthor.add(book);
+                }
+            }
+            books.removeAll(booksRemoveByAuthor);
+    }
+
     //по-другому не понимаю как проверить что действительно удалилась книга из database
     //мне надо днайти книгу из созданных книг
     public List<Book> getBooks() {
