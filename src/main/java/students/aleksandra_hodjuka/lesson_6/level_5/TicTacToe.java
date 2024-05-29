@@ -1,32 +1,19 @@
 package students.aleksandra_hodjuka.lesson_6.level_5;
 
 public class TicTacToe {
-    public boolean isWinPositionForVerticals(int[][] field, int playerToCheck) {
-        for (int col = 0; col < field[0].length; col++) {
-            boolean isVerticalWin = true;
-            for (int row = 0; row < field.length; row++) {
-                if (field[row][col] != playerToCheck) {
-                    isVerticalWin = false;
-                    break;
-                }
-            }
-            if (isVerticalWin) {
-                return true;
-            }
-        }
-        return false;
-    }
+    public boolean isWinPositionForLines(int[][] field, int playerToCheck, boolean checkVerticals) {
+        int size = field.length;
 
-    public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
-        for (int row = 0; row < field.length; row++) {
-            boolean isHorizontalWin = true;
-            for (int col = 0; col < field[row].length; col++) {
-                if (field[row][col] != playerToCheck) {
-                    isHorizontalWin = false;
+        for (int line = 0; line < size; line++) {
+            boolean isWinningLine = true;
+            for (int i = 0; i < size; i++) {
+                int value = checkVerticals ? field[i][line] : field[line][i];
+                if (value != playerToCheck) {
+                    isWinningLine = false;
                     break;
                 }
             }
-            if (isHorizontalWin) {
+            if (isWinningLine) {
                 return true;
             }
         }
@@ -34,55 +21,28 @@ public class TicTacToe {
     }
 
     public boolean isWinPositionForDiagonals(int[][] field, int playerToCheck) {
-        // Проверка диагоналей слева направо (\)
-        boolean leftDiagonalWin = true;
-        for (int i = 0; i < field.length; i++) {
-            if (field[i][i] != playerToCheck) {
-                leftDiagonalWin = false;
-                break;
-            }
-        }
-        if (leftDiagonalWin) {
-            return true;
-        }
-
-        // Проверка диагоналей справа налево (/)
-        boolean rightDiagonalWin = true;
-        for (int i = 0; i < field.length; i++) {
-            if (field[i][field.length - 1 - i] != playerToCheck) {
-                rightDiagonalWin = false;
-                break;
-            }
-        }
-        if (rightDiagonalWin) {
-            return true;
-        }
-
-        return false;
+        return isWinPositionForLines(field, playerToCheck, true) || isWinPositionForLines(field, playerToCheck, false);
     }
 
     public boolean isWinPosition(int[][] field, int playerToCheck) {
-        return isWinPositionForHorizontals(field, playerToCheck) ||
-                isWinPositionForVerticals(field, playerToCheck) ||
-                isWinPositionForDiagonals(field, playerToCheck);
+        return isWinPositionForDiagonals(field, playerToCheck) || isWinPositionForLines(field, playerToCheck, true);
     }
 
     public boolean isDrawPosition(int[][] field) {
-        // Проверяем наличие пустых клеток
         for (int[] row : field) {
             for (int cell : row) {
                 if (cell == -1) {
-                    return false; // Есть пустая клетка, позиция не ничейная
+                    return false; // Есть пустая клетка, позиция не ничья
                 }
             }
         }
 
         // Проверяем, не является ли позиция победной для какого-либо игрока
         if (isWinPosition(field, 0) || isWinPosition(field, 1)) {
-            return false; // Позиция победна для одного из игроков, не ничейная
+            return false; // Позиция победна для одного из игроков, не ничья
         }
 
-        return true; // Все клетки заполнены, но нет победителя, позиция ничейна
+        return true; // Все клетки заполнены, но нет победителя, позиция ничья
     }
 }
 

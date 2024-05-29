@@ -21,6 +21,8 @@ public class ArrayServiceTest {
         test.testSort_SingleElementArray();
         test.testSort_AlreadySortedArray();
         test.testSort_NegativeNumbers();
+        testReverse();
+
     }
 
     public void shouldReturnPositiveNumber() {
@@ -42,7 +44,7 @@ public class ArrayServiceTest {
         int[] array = {};
         int numberToSearch = 2;
         boolean realResult = ArrayService.contains(array, numberToSearch);
-        boolean expectedResult = true;
+        boolean expectedResult = false;
 
         if (realResult == expectedResult) {
             System.out.println(numberToSearch + " - Тест на поиск числа в пустом массиве = Passed");
@@ -181,8 +183,17 @@ public class ArrayServiceTest {
         // Проверяем, что все вхождения числа 3 были заменены на 7
         boolean allReplaced = true;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] != newNumber) {
-                allReplaced = true;
+            if (originalArray[i] == numberToReplace && array[i] != newNumber) {
+                allReplaced = false;
+                break;
+            }
+        }
+        // Проверяем, что массив содержит только новые числа на месте замененных
+        // и остальные элементы остались без изменений
+        boolean noOldNumberLeft = true;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == numberToReplace) {
+                noOldNumberLeft = false;
                 break;
             }
         }
@@ -286,5 +297,39 @@ public class ArrayServiceTest {
             System.out.println("Тест на сортировку массива с отрицательными числами : Failed.");
         }
     }
+
+    public static void testReverse() {
+        // Инициализация исходного массива
+        int[] array = {1, 2, 3, 4, 5, 6};
+
+        // Ожидаемый массив после разворота
+        int[] expectedArray = {6, 5, 4, 3, 2, 1};
+
+        // Вызов метода для разворота массива
+        ArrayService.reverse(array);
+
+        // Проверка, что результат соответствует ожиданиям
+        if (arraysAreEqual(expectedArray, array)) {
+            System.out.println("Тест на разворот массива: Passed.");
+        } else {
+            System.out.println("Тест на разворот массива: Failed.");
+        }
+    }
+
+    private static boolean arraysAreEqual(int[] a, int[] b) {
+        if (a == null || b == null) {
+            return a == b;
+        }
+        if (a.length != b.length) {
+            return false;
+        }
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] != b[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
+
 

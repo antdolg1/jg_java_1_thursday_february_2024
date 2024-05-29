@@ -3,10 +3,6 @@ package students.aleksandra_hodjuka.lesson_6.level_3;
 import java.util.Arrays;
 
 class ArrayService {
-    int number;
-    int numberToSearch;
-    int numberToReplace;
-    int newNumber;
 
 
     public static boolean contains(int[] array, int numberToSearch) {
@@ -81,15 +77,16 @@ class ArrayService {
             System.out.println("Массив не содержит число " + number);
         }
         replaceFirst(array, numberToReplace, newNumber);
-        System.out.println("Массив после замены: " + java.util.Arrays.toString(array));
+        System.out.println("Массив после замены: " + Arrays.toString(array));
         int[] array2 = {2, 4, 3, 6, 5};
         replaceAll(array2, numberToReplace, newNumber);
-        System.out.println("Массив после замены всех вхождений: " + java.util.Arrays.toString(array2));
-        System.out.println("Массив до переворота: " + java.util.Arrays.toString(array));
+        System.out.println("Массив после замены всех вхождений: " + Arrays.toString(array2));
+        System.out.println("Массив до переворота: " + Arrays.toString(array));
         reverse(array);
-        System.out.println("Массив после переворота: " + java.util.Arrays.toString(array));
-        System.out.println("Массив до сортировки: " + java.util.Arrays.toString(array));
+        System.out.println("Массив после переворота: " + Arrays.toString(array));
+        System.out.println("Массив до сортировки: " + Arrays.toString(array));
         sort(array);
-        System.out.println("Массив после сортировки: " + java.util.Arrays.toString(array));
+        System.out.println("Массив после сортировки: " + Arrays.toString(array));
     }
+
 }
