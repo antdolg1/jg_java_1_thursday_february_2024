@@ -45,4 +45,3 @@ public class TicTacToe {
         return true; // Все клетки заполнены, но нет победителя, позиция ничья
     }
 }
-
