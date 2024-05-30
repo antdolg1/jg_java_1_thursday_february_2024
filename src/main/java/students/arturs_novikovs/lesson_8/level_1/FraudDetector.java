@@ -9,9 +9,10 @@ public FraudDetector(FraudRule[] fraudRules) {
 
 public boolean isFraud(Transaction transaction) {
     for (FraudRule rule : fraudRules) {
-        if (rule.isFraud(transaction)) {
-            return true;
+        if (!rule.isFraud(transaction)) {
+            continue;
         }
+        return true;
     }
     return false;
 }

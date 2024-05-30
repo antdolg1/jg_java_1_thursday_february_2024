@@ -11,4 +11,3 @@ public class Main {
         System.out.println("Transaction 1 is fraud: " + fraudDetector.isFraud(transaction1)); // true
     }
 }
-}
