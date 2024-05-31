@@ -1,8 +1,5 @@
 package students.ruslan_k.lesson_12.level_2;
 
-import java.util.ArrayList;
-
-//import java.util.Collections;
 import java.util.List;
 
 class UserCredentials {
