@@ -14,7 +14,7 @@ public class BankApiImpl implements BankApi {
     @Override
     public Optional<BankClient> findByUid(UserCredentials credentials, String uid) throws AccessDeniedException {
 
-            if (!credentials.getRoles().contains(Role.CAN_SEARCH_CLIENTS)) {
+            if (!credentials.hasRole(Role.CAN_SEARCH_CLIENTS)) {
                 throw new AccessDeniedException("User does not have necessary permission!");
             }
             for (BankClient client : clients) {
