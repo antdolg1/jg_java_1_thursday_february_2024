@@ -10,7 +10,7 @@ public class UserCredentials {
         this.roles = roles;
     }
 
-    public List<Role> getRole() {
+    public List<Role> getRoles() {
         return roles;
     }
 }
