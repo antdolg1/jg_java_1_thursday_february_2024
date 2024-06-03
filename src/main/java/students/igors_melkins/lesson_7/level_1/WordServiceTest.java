@@ -24,7 +24,6 @@ public class WordServiceTest {
 
         String text5 = " Kiwi,grapes,bananas,orange ";
         System.out.println("Test 5 result is : " + wordService.findMostFrequentWord(text5));
-
     }
 
     private void assertEquals (String text , String mostFrequentWord){

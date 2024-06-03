@@ -25,7 +25,6 @@ public class WordService {
             }
             return mostFrequentWord;
         }
-
         public static void main (String [] args ){
             WordService wordService = new WordService();
             String mostFrequentWord = wordService.findMostFrequentWord(wordService.text);
