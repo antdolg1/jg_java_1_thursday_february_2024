@@ -5,7 +5,7 @@ public class CustomExceptionExample {
         try {
             throw new CustomException("This is a custom exception");
         } catch (CustomException e) {
-            System.out.println("CustomException caugth: " + e.getMessage());
+            System.out.println("CustomException caught: " + e.getMessage());
         }
     }
 }
