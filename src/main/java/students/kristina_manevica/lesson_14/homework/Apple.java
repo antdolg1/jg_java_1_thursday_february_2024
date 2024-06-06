@@ -1,4 +1,4 @@
-package students.kristina_manevica.lesson_14.homework.level_1;
+package students.kristina_manevica.lesson_14.homework;
 
 public class Apple {
 

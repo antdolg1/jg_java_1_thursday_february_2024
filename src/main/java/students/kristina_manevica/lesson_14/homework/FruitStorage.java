@@ -1,4 +1,6 @@
-package students.kristina_manevica.lesson_14.homework.level_1;
+package students.kristina_manevica.lesson_14.homework;
+
+import teacher.lesson_7.lessoncode.quizz.App;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,10 +20,10 @@ public class FruitStorage {
         return apples;
     }
 
-    public List<Apple> findApplesByColor(List<Apple> inventory, String color) {
+    public List<Apple> findApples(List<Apple> inventory, ApplePredicate p) {
         List<Apple> result = new ArrayList<>();
         for (Apple apple : inventory) {
-            if (apple.getColor().equals(color)) {
+            if (p.test(apple)) {
                 result.add(apple);
             }
         }
