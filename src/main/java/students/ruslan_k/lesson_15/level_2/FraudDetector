@@ -1,0 +1,37 @@
+
+
+//class Trader is necessary for working check
+
+class FraudDetector {
+
+    // IF-structure is not necessary. Just RETURN
+
+    boolean isFraud(Trader trader) {
+        if (compareTraderName(trader) || (compareCity(trader))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // Method always return TRUE
+
+    boolean compareTraderName(Trader trader) {
+        String traderName = trader.getFullName();
+        if (traderName.equals("Pokemon")) {
+        }
+        return true;
+    }
+
+    // IF-structure is not necessary. Just RETURN
+
+    boolean compareCity(Trader trader) {
+        String cityName = trader.getCity();
+        if (cityName.equals("Sidney")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+}
