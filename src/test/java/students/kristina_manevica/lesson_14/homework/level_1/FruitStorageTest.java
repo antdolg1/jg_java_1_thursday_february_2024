@@ -30,12 +30,8 @@ public class FruitStorageTest {
     @Test
     void findAppleBy_RedColor() {
 
-        List<Apple> redApples = fruitStorage.findApples(allApples, new ApplePredicate() {
-            @Override
-            public boolean test(Apple apple) {
-                return "red".equals(apple.getColor());
-            }
-        });
+        List<Apple> redApples = fruitStorage.findApples(allApples,
+                (Apple apple) -> "red".equals(apple.getColor()));
 
         Assertions.assertTrue(redApples.stream()
                 .allMatch(apple -> "red".equals(apple.getColor())));
@@ -44,12 +40,8 @@ public class FruitStorageTest {
     @Test
     void findAppleBy_HeavyWeight() {
 
-        List<Apple> heavyApples = fruitStorage.findApples(allApples, new ApplePredicate() {
-            @Override
-            public boolean test(Apple apple) {
-                return apple.getWeight() >= 150;
-            }
-        });
+        List<Apple> heavyApples = fruitStorage.findApples(allApples,
+                (Apple apple) -> apple.getWeight() >= 150);
 
         Assertions.assertTrue(heavyApples.stream()
                 .allMatch(apple -> apple.getWeight() >= 150));
@@ -58,41 +50,29 @@ public class FruitStorageTest {
     @Test
     void findAppleBy_LightWeight() {
 
-        List<Apple> lightApples = fruitStorage.findApples(allApples, new ApplePredicate() {
-            @Override
-            public boolean test(Apple apple) {
-                return apple.getWeight() < 150;
-            }
-        });
+        List<Apple> lightApples = fruitStorage.findApples(allApples,
+                (Apple apple) -> apple.getWeight() < 150);
 
         Assertions.assertTrue(lightApples.stream()
                 .allMatch(apple -> apple.getWeight() < 150));
     }
 
-
-
-
-
-
-/*
     @Test
-    void findAppleBy_YellowColor() {
+    void findAppleBy_GreenColor_And_HeavyWeight() {
 
-        List<Apple> yellowApples = fruitStorage.findApplesByColor(allApples, "yellow");
+        List<Apple> greenHeavyApples = fruitStorage.findApples(allApples,
+                (Apple apple) -> "green".equals(apple.getColor()) && apple.getWeight() >= 150);
 
-        Assertions.assertEquals(2, yellowApples.size());
-
-        for (Apple apple : yellowApples) {
-            Assertions.assertEquals("yellow", apple.getColor());
-        }
+        Assertions.assertTrue(greenHeavyApples.stream()
+                .allMatch(apple -> "green".equals(apple.getColor()) && apple.getWeight() >= 150));
     }
 
     @Test
     void findAppleBy_NonExistingColor() {
 
-        List<Apple> blackApples = fruitStorage.findApplesByColor(allApples, "black");
+        List<Apple> blackApples = fruitStorage.findApples(allApples,
+                (Apple apple) -> "black".equals(apple.getColor()));
 
         Assertions.assertEquals(0, blackApples.size());
-    }*/
-
+    }
 }
