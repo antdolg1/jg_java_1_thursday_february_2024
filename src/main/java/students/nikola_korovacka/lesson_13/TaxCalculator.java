@@ -1,10 +1,9 @@
-package teacher.lesson_13.lessoncode;
-
+package students.nikola_korovacka.lesson_13;
 import java.math.BigDecimal;
 
 public interface TaxCalculator {
 
-    double calculate25PercentTax(double income);
-
     BigDecimal calculateTax(BigDecimal income);
+
 }
+
