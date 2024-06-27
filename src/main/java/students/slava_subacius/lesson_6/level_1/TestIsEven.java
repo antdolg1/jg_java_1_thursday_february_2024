@@ -8,7 +8,7 @@ public class TestIsEven {
         testIsEvenForNegativNumber();
     }
 
-    static void testIsEvenForEvenNumber() {
+    public static void testIsEvenForEvenNumber() {
         NumberUtils numberUtils = new NumberUtils();
         boolean actualResult = numberUtils.isEven(4);
         boolean expectedResult = true;
