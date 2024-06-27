@@ -28,8 +28,8 @@ class DayOfTheWeekDetectorIfVersion {
     }
 }
 
-Создайте для этого класса интерфейс DayOfTheWeekDetector.
-Сделайте так, чтобы класс DayOfTheWeekDetectorIfVersion реализовывал
+Создайте для этого класса интерфейс DayDayOfTheWeekDetectorIfVersionOfTheWeekDetector.
+Сделайте так, чтобы класс  реализовывал
 интерфейс DayOfTheWeekDetector.
 
 Создайте вторую имплементацию данного интерфейса основанную на switch операторе.

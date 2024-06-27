@@ -1,0 +1,6 @@
+a --> a.doSomething()
+
+(Animal a) --> { return a.doSomething(); }
+
+(int a, int b) --> a + b
+
