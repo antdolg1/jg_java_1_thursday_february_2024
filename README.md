@@ -63,7 +63,21 @@
 #### Записи лекций
 
 * [Лекция 1](https://www.youtube.com/watch?v=DU-TM-Z9xGs)
-* [Лекция 2]()
+* [Лекция 2](https://www.youtube.com/watch?v=ycP0WkItevI)
+* [Лекция 3]()
+* [Лекция 4](https://www.youtube.com/watch?v=oOj2FdCZ0Ig)
+* [Лекция 5](https://www.youtube.com/watch?v=M-KtK-rzaEM)
+* [Лекция 6](https://www.youtube.com/watch?v=z0PXcUJdoSQ)
+* [Лекция 7](https://www.youtube.com/watch?v=VPEBd4Dz19c)
+* [Лекция 8](https://www.youtube.com/watch?v=DV6Vh-q7CjE)
+* [Лекция 9](https://www.youtube.com/watch?v=qDbUSnIBq7s)
+* [Лекция 10](https://www.youtube.com/watch?v=OckYDpWLeKE)
+* [Лекция 11](https://www.youtube.com/watch?v=dkHs1LU9IyY)
+* [Лекция 12](https://www.youtube.com/watch?v=MZEnRdN-VBc)
+* [Лекция 13](https://www.youtube.com/watch?v=1sDVDgmLlSY)
+* [Лекция 14](https://www.youtube.com/watch?v=UcHKLkrMaaQ)
+* [Лекция 15](https://www.youtube.com/watch?v=IpG4KxV6VCM)
+* [Лекция 16]()
 
 ---
 
@@ -84,7 +98,7 @@
 
 #### Обратная связь
 
-* [Telegram]()
+* [WhatsApp](https://chat.whatsapp.com/I9vSXcZ3eSpJY4eHDvzHYo)
 
 ---
 

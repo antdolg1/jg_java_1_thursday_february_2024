@@ -89,7 +89,6 @@ class DocVisit {
             this.diagnose="";
             this.visitPrice=0;
         }
-
          void setClientFirstName(String clientFirstName) {
             this.clientFirstName = clientFirstName;
         }

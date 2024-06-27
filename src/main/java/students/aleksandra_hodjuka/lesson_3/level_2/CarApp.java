@@ -1,7 +1,6 @@
 package students.aleksandra_hodjuka.lesson_3.level_2;
 
-
-public class CarApp {
+class CarApp {
     public static void main(String[] args) {
 
         Car Car1 = new Car("Opel", "Red", 20000.00);
@@ -42,7 +41,5 @@ public class CarApp {
         System.out.println("Car 3 new model = " + Car3.getModel());
         System.out.println("Car 3 new color = " + Car3.getColor());
         System.out.println("Car 3 new price = " + Car3.getPrice());
-
-
     }
 }
