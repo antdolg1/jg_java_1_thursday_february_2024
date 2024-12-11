@@ -1,6 +1,8 @@
 Почему класс AccessDeniedException в нашем случае
 лучше наследовать от Exception, а не от RuntimeException?
 
+Видимо, потому, что исключения класса RunTimeException более "низкого" уровня чем исключения класса Exception
+
 class AccessDeniedException extends Exception {
 
 }

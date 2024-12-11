@@ -1,0 +1,4 @@
+
+
+public class RuntimeException extends Exception
+public class Exception extends Throwable
